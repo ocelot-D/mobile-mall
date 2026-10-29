@@ -223,7 +223,11 @@ function makeCategorySvg(cat) {
     drop: '<path d="M12 3s6 6.5 6 10a6 6 0 0 1-12 0c0-3.5 6-10 6-10z"/>',
     run: '<circle cx="15" cy="4" r="2"/><path d="M4 20l4-9 4 3 2-6"/><path d="M8 11 6 16l5 2 3-4"/>',
   }
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+  // 注意 viewBox 必须是 0 0 96 96：
+  // 之前写成 0 0 24 24，可视区只有左上角 24×24，白色图形被 translate(24 24)
+  // 推到了可视区外面，页面上就只剩一块纯色（老大截图吐槽的"全是色块"就是这个）。
+  // viewBox 和画布尺寸一致后，96×96 的圆角底 + 居中的白色线性图形才都进画面。
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
 <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${cat.c1}"/><stop offset="1" stop-color="${cat.c2}"/></linearGradient></defs>
 <rect width="96" height="96" rx="24" fill="url(#g)"/>
 <g transform="translate(24 24) scale(2)">${icons[cat.icon] || icons.home}</g>
