@@ -5,7 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "seed": "node scripts/gen-seed.mjs",
+    "seed": "node scripts/gen-seed.mjs && node scripts/gen-icons.mjs",
+    "icons": "node scripts/gen-icons.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

@@ -59,6 +59,33 @@
       </ul>
     </section>
 
+    <!-- 「安装到主屏幕」：H5 秒变"类 App"体验的入口，真机演示就点这里 -->
+    <section class="card-block pwa-block">
+      <h2 class="block-title">装到手机桌面</h2>
+
+      <!-- 已经装好了：告诉用户当前就是全屏 App 模式 -->
+      <template v-if="pwa.isStandalone.value">
+        <p class="pwa-tip pwa-ok">✓ 已从桌面图标打开，当前是全屏 App 模式（无地址栏）</p>
+      </template>
+
+      <!-- 能弹系统安装框（安卓 Chrome 常见）：直接给按钮 -->
+      <template v-else-if="pwa.canInstall.value">
+        <p class="pwa-tip">安装后从桌面图标打开，全屏显示、没有地址栏，和原生 App 一样。</p>
+        <button class="install-btn tap tap-44" @click="onInstall">安装到桌面</button>
+      </template>
+
+      <!-- 弹不了系统框：给手动添加的操作指引 -->
+      <template v-else>
+        <p class="pwa-tip" v-if="pwa.isIOS.value">
+          iPhone 上：点浏览器底部的「分享」按钮 <span class="kbd">⬆︎</span> → 往下滑找到
+          「添加到主屏幕」→ 点「添加」。
+        </p>
+        <p class="pwa-tip" v-else>
+          安卓上：点浏览器右上角「⋮」菜单 → 选「添加到主屏幕」或「安装应用」。
+        </p>
+      </template>
+    </section>
+
     <button class="danger tap tap-44" @click="clearCart">清空购物车</button>
   </div>
 </template>
@@ -81,6 +108,11 @@
 import { device, setLowEndMode, resetLowEndMode } from '../composables/useDeviceTier'
 import { useCartStore } from '../stores/cart'
 import { toast, toastOk } from '../composables/useToast'
+// PWA 安装状态与触发函数（本页"装到手机桌面"卡片用）
+import { canInstall, isStandalone, isIOS, promptInstall } from '../composables/usePwaInstall'
+
+// 模板里用 pwa.xxx 引用，避免五个变量名打架
+const pwa = { canInstall, isStandalone, isIOS }
 
 const cart = useCartStore()
 
@@ -122,6 +154,21 @@ function clearCart() {
 
 function onStub() {
   toast('这是演示项目，订单模块未接入', 'warn')
+}
+
+// ---------------------------------------------------------------------------
+// 安装到桌面：触发系统安装弹窗
+// ---------------------------------------------------------------------------
+async function onInstall() {
+  const result = await promptInstall()
+  if (result === 'accepted') {
+    toastOk('已添加到桌面，去图标打开试试')
+  } else if (result === 'dismissed') {
+    toast('已取消，随时可以再装', 'warn')
+  } else {
+    // 弹不了系统框（浏览器没发安装事件），退回手动指引
+    toast('请用浏览器菜单里的「添加到主屏幕」', 'warn')
+  }
 }
 </script>
 
@@ -331,5 +378,43 @@ function onStub() {
   background: #fff;
   color: #a32d2d;
   font-size: 0.13rem;
+}
+
+/* ── 「装到手机桌面」卡片 ─────────────────────────────── */
+
+.pwa-tip {
+  margin: 0.06rem 0 0;
+  font-size: 0.12rem;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+/* 已经装好的状态行，绿色提示 */
+.pwa-ok {
+  color: var(--green);
+}
+
+/* 安装按钮：品牌色实底，宽度撑满卡片 */
+.install-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.1rem;
+  padding: 0.11rem 0;
+  border-radius: 0.08rem;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.14rem;
+  font-weight: 600;
+}
+
+/* 手动指引里提到的系统按钮，用键帽样式突出 */
+.kbd {
+  display: inline-block;
+  padding: 0 0.05rem;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 0.04rem;
+  background: var(--bg);
+  font-size: 0.11rem;
 }
 </style>

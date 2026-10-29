@@ -119,6 +119,19 @@ npm run serve    # 打开 http://localhost:3002/
 > 只按 F12 切手机模式不算验收。安全区、地址栏收起、触摸反馈、键盘弹起，
 > 这四样模拟器里跟真机都不一样。
 
+### Install to home screen（装到手机桌面，类 App 体验）
+
+配置了完整的 PWA 三件套：`public/manifest.webmanifest`（应用清单）、
+`public/icons/`（`npm run icons` 代码生成的 4 张 PNG，无版权）、`public/sw.js`
+（Service Worker，**仅生产环境注册**，见 `src/main.js`，开发模式注册缓存会捣乱）。
+
+- Android（Chrome/Edge）：菜单「添加到主屏幕」/「安装应用」，或商城「我的」页点「安装到桌面」
+  （触发 `beforeinstallprompt`，代码在 `src/composables/usePwaInstall.js`）
+- iOS：Safari 分享 → 「添加到主屏幕」（微信内打开无效，iOS 必须用 Safari）
+- 装完从桌面图标打开 = 全屏 standalone 模式，无地址栏，观感与原生 App 一致
+- SW 缓存策略：`/api/*` 永远走网络（价格库存不能是旧的）；静态资源缓存优先
+  （文件名带 hash，绝对安全）；改了要缓存的文件记得把 `sw.js` 里的 `VERSION` +1
+
 ---
 
 ## 六、及格线（逐条打勾）

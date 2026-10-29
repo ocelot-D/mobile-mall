@@ -23,6 +23,18 @@
   <!-- 移动端浏览器顶部的地址栏颜色（安卓 Chrome 生效） -->
   <meta name="theme-color" content="#ffffff" />
 
+  <!--
+    「添加到主屏幕」三件套：
+    1. manifest   应用清单：图标、名字、独立窗口模式全在这份 JSON 里
+    2. iOS 专用 meta  Safari 不认 manifest，要单独声明
+    3. apple-touch-icon  iOS 添加到主屏幕时用的图标（必须 PNG、不透明）
+  -->
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="MobiMall" />
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="/icons/icon-192.png" />
+
   <!-- 声明这是一个 Web App，iOS 上"添加到主屏幕"后不显示 Safari 地址栏 -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
