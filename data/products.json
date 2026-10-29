@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T12:35:07.062Z",
+  "generatedAt": "2026-10-29T14:17:45.005Z",
   "categories": [
     {
       "id": "digital",
@@ -78,11 +78,11 @@
         "热卖"
       ],
       "images": [
-        "img/p001-1.svg",
-        "img/p001-2.svg",
-        "img/p001-3.svg"
+        "img/p001-1.webp",
+        "img/p001-2.webp",
+        "img/p001-3.webp"
       ],
-      "cover": "img/p001-1.svg",
+      "cover": "img/p001-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -141,16 +141,16 @@
       "sales": 15230,
       "stock": 240,
       "rating": 4.7,
-      "ratio": 1.25,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p002-1.svg",
-        "img/p002-2.svg",
-        "img/p002-3.svg"
+        "img/p002-1.webp",
+        "img/p002-2.webp",
+        "img/p002-3.webp"
       ],
-      "cover": "img/p002-1.svg",
+      "cover": "img/p002-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -200,8 +200,8 @@
     {
       "id": "p003",
       "no": "003",
-      "title": "掌阅 X5 电子墨水屏",
-      "subtitle": "6.8 英寸 · 冷暖双色温前光",
+      "title": "轻阅 X5 平板电脑",
+      "subtitle": "8.3 英寸 · 随身图书馆 · 全天续航",
       "categoryId": "digital",
       "categoryName": "数码",
       "price": 899,
@@ -209,16 +209,16 @@
       "sales": 3260,
       "stock": 42,
       "rating": 4.6,
-      "ratio": 1.33,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p003-1.svg",
-        "img/p003-2.svg",
-        "img/p003-3.svg"
+        "img/p003-1.webp",
+        "img/p003-2.webp",
+        "img/p003-3.webp"
       ],
-      "cover": "img/p003-1.svg",
+      "cover": "img/p003-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -277,16 +277,16 @@
       "sales": 6742,
       "stock": 150,
       "rating": 4.5,
-      "ratio": 0.9,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p004-1.svg",
-        "img/p004-2.svg",
-        "img/p004-3.svg"
+        "img/p004-1.webp",
+        "img/p004-2.webp",
+        "img/p004-3.webp"
       ],
-      "cover": "img/p004-1.svg",
+      "cover": "img/p004-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -336,8 +336,8 @@
     {
       "id": "p005",
       "no": "005",
-      "title": "极简机械键盘 K3",
-      "subtitle": "低音红轴 · 三模连接",
+      "title": "轻护 MagSafe 手机壳",
+      "subtitle": "液态硅胶 · 磁吸充电不摘壳",
       "categoryId": "digital",
       "categoryName": "数码",
       "price": 329,
@@ -345,16 +345,16 @@
       "sales": 2180,
       "stock": 63,
       "rating": 4.7,
-      "ratio": 1.15,
+      "ratio": 1,
       "tags": [
         "热卖"
       ],
       "images": [
-        "img/p005-1.svg",
-        "img/p005-2.svg",
-        "img/p005-3.svg"
+        "img/p005-1.webp",
+        "img/p005-2.webp",
+        "img/p005-3.webp"
       ],
-      "cover": "img/p005-1.svg",
+      "cover": "img/p005-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -404,8 +404,8 @@
     {
       "id": "p006",
       "no": "006",
-      "title": "光影 4K 便携投影仪",
-      "subtitle": "自动对焦 · 内置电池",
+      "title": "拾音智能音箱 mini",
+      "subtitle": "360° 环绕声场 · 语音助手唤醒",
       "categoryId": "digital",
       "categoryName": "数码",
       "price": 1699,
@@ -419,11 +419,11 @@
         "包邮"
       ],
       "images": [
-        "img/p006-1.svg",
-        "img/p006-2.svg",
-        "img/p006-3.svg"
+        "img/p006-1.webp",
+        "img/p006-2.webp",
+        "img/p006-3.webp"
       ],
-      "cover": "img/p006-1.svg",
+      "cover": "img/p006-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -469,8 +469,8 @@
     {
       "id": "p007",
       "no": "007",
-      "title": "云朵感宽松圆领卫衣",
-      "subtitle": "380g 重磅棉 · 不起球",
+      "title": "云朵感重磅纯棉 T 恤",
+      "subtitle": "260g 克重 · 不透不塌",
       "categoryId": "apparel",
       "categoryName": "服饰",
       "price": 189,
@@ -478,17 +478,17 @@
       "sales": 12480,
       "stock": 320,
       "rating": 4.8,
-      "ratio": 1.3,
+      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
       ],
       "images": [
-        "img/p007-1.svg",
-        "img/p007-2.svg",
-        "img/p007-3.svg"
+        "img/p007-1.webp",
+        "img/p007-2.webp",
+        "img/p007-3.webp"
       ],
-      "cover": "img/p007-1.svg",
+      "cover": "img/p007-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -546,8 +546,8 @@
     {
       "id": "p008",
       "no": "008",
-      "title": "轻氧感直筒牛仔裤",
-      "subtitle": "高腰显瘦 · 四面弹面料",
+      "title": "通勤真皮托特包",
+      "subtitle": "头层牛皮 · 15.6 寸笔电直入",
       "categoryId": "apparel",
       "categoryName": "服饰",
       "price": 239,
@@ -555,16 +555,16 @@
       "sales": 8930,
       "stock": 180,
       "rating": 4.6,
-      "ratio": 1.4,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p008-1.svg",
-        "img/p008-2.svg",
-        "img/p008-3.svg"
+        "img/p008-1.webp",
+        "img/p008-2.webp",
+        "img/p008-3.webp"
       ],
-      "cover": "img/p008-1.svg",
+      "cover": "img/p008-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -626,8 +626,8 @@
     {
       "id": "p009",
       "no": "009",
-      "title": "暖阳 90 白鸭绒羽绒服",
-      "subtitle": "含绒量 90% · 零下十度可穿",
+      "title": "雾感收腰针织连衣裙",
+      "subtitle": "垂坠不贴身 · 秋冬新款",
       "categoryId": "apparel",
       "categoryName": "服饰",
       "price": 699,
@@ -635,16 +635,16 @@
       "sales": 3620,
       "stock": 95,
       "rating": 4.7,
-      "ratio": 1.25,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p009-1.svg",
-        "img/p009-2.svg",
-        "img/p009-3.svg"
+        "img/p009-1.webp",
+        "img/p009-2.webp",
+        "img/p009-3.webp"
       ],
-      "cover": "img/p009-1.svg",
+      "cover": "img/p009-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -715,16 +715,16 @@
       "sales": 5210,
       "stock": 210,
       "rating": 4.5,
-      "ratio": 1.35,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p010-1.svg",
-        "img/p010-2.svg",
-        "img/p010-3.svg"
+        "img/p010-1.webp",
+        "img/p010-2.webp",
+        "img/p010-3.webp"
       ],
-      "cover": "img/p010-1.svg",
+      "cover": "img/p010-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -796,11 +796,11 @@
         "热卖"
       ],
       "images": [
-        "img/p011-1.svg",
-        "img/p011-2.svg",
-        "img/p011-3.svg"
+        "img/p011-1.webp",
+        "img/p011-2.webp",
+        "img/p011-3.webp"
       ],
-      "cover": "img/p011-1.svg",
+      "cover": "img/p011-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -870,8 +870,8 @@
     {
       "id": "p012",
       "no": "012",
-      "title": "细织羊毛混纺围巾",
-      "subtitle": "亲肤不扎 · 冬日出街单品",
+      "title": "复古格纹法兰绒衬衫",
+      "subtitle": "磨毛加厚 · 免烫抗皱",
       "categoryId": "apparel",
       "categoryName": "服饰",
       "price": 99,
@@ -879,16 +879,16 @@
       "sales": 7340,
       "stock": 400,
       "rating": 4.4,
-      "ratio": 1.1,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p012-1.svg",
-        "img/p012-2.svg",
-        "img/p012-3.svg"
+        "img/p012-1.webp",
+        "img/p012-2.webp",
+        "img/p012-3.webp"
       ],
-      "cover": "img/p012-1.svg",
+      "cover": "img/p012-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -938,8 +938,8 @@
     {
       "id": "p013",
       "no": "013",
-      "title": "北欧实木升降电脑桌",
-      "subtitle": "静音电机 · 记忆高度",
+      "title": "北欧布艺三人沙发",
+      "subtitle": "高回弹海绵 · 可拆洗外套",
       "categoryId": "home",
       "categoryName": "家居",
       "price": 1299,
@@ -952,11 +952,11 @@
         "包邮"
       ],
       "images": [
-        "img/p013-1.svg",
-        "img/p013-2.svg",
-        "img/p013-3.svg"
+        "img/p013-1.webp",
+        "img/p013-2.webp",
+        "img/p013-3.webp"
       ],
-      "cover": "img/p013-1.svg",
+      "cover": "img/p013-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1019,17 +1019,17 @@
       "sales": 9840,
       "stock": 150,
       "rating": 4.8,
-      "ratio": 1.2,
+      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
       ],
       "images": [
-        "img/p014-1.svg",
-        "img/p014-2.svg",
-        "img/p014-3.svg"
+        "img/p014-1.webp",
+        "img/p014-2.webp",
+        "img/p014-3.webp"
       ],
-      "cover": "img/p014-1.svg",
+      "cover": "img/p014-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1087,8 +1087,8 @@
     {
       "id": "p015",
       "no": "015",
-      "title": "静音循环扇 S2",
-      "subtitle": "直流变频 · 最低 18 分贝",
+      "title": "北欧风绿植摆件",
+      "subtitle": "仿真植物 · 免打理",
       "categoryId": "home",
       "categoryName": "家居",
       "price": 429,
@@ -1096,16 +1096,16 @@
       "sales": 4720,
       "stock": 88,
       "rating": 4.6,
-      "ratio": 1.25,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p015-1.svg",
-        "img/p015-2.svg",
-        "img/p015-3.svg"
+        "img/p015-1.webp",
+        "img/p015-2.webp",
+        "img/p015-3.webp"
       ],
-      "cover": "img/p015-1.svg",
+      "cover": "img/p015-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1155,8 +1155,8 @@
     {
       "id": "p016",
       "no": "016",
-      "title": "拾光香薰加湿器",
-      "subtitle": "300ml · 无雾静音",
+      "title": "原木床头柜",
+      "subtitle": "小户型友好 · 静音阻尼抽屉",
       "categoryId": "home",
       "categoryName": "家居",
       "price": 149,
@@ -1169,11 +1169,11 @@
         "包邮"
       ],
       "images": [
-        "img/p016-1.svg",
-        "img/p016-2.svg",
-        "img/p016-3.svg"
+        "img/p016-1.webp",
+        "img/p016-2.webp",
+        "img/p016-3.webp"
       ],
-      "cover": "img/p016-1.svg",
+      "cover": "img/p016-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1223,8 +1223,8 @@
     {
       "id": "p017",
       "no": "017",
-      "title": "收纳方格布艺凳",
-      "subtitle": "可折叠 · 承重 120kg",
+      "title": "北欧实木餐椅",
+      "subtitle": "曲木靠背 · 承重 150kg",
       "categoryId": "home",
       "categoryName": "家居",
       "price": 89,
@@ -1232,16 +1232,16 @@
       "sales": 6210,
       "stock": 420,
       "rating": 4.3,
-      "ratio": 0.95,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p017-1.svg",
-        "img/p017-2.svg",
-        "img/p017-3.svg"
+        "img/p017-1.webp",
+        "img/p017-2.webp",
+        "img/p017-3.webp"
       ],
-      "cover": "img/p017-1.svg",
+      "cover": "img/p017-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1291,8 +1291,8 @@
     {
       "id": "p018",
       "no": "018",
-      "title": "暖光落地氛围灯",
-      "subtitle": "三档色温 · 无极调光",
+      "title": "暖光桌面氛围灯",
+      "subtitle": "三档色温 · 触控调光",
       "categoryId": "home",
       "categoryName": "家居",
       "price": 259,
@@ -1300,16 +1300,16 @@
       "sales": 3380,
       "stock": 120,
       "rating": 4.6,
-      "ratio": 1.35,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p018-1.svg",
-        "img/p018-2.svg",
-        "img/p018-3.svg"
+        "img/p018-1.webp",
+        "img/p018-2.webp",
+        "img/p018-3.webp"
       ],
-      "cover": "img/p018-1.svg",
+      "cover": "img/p018-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1359,8 +1359,8 @@
     {
       "id": "p019",
       "no": "019",
-      "title": "明前龙井 特级礼盒",
-      "subtitle": "手工采摘 · 豆香浓郁",
+      "title": "深山百花蜂蜜",
+      "subtitle": "波美度 42 · 500g 玻璃罐装",
       "categoryId": "food",
       "categoryName": "食品",
       "price": 288,
@@ -1368,17 +1368,17 @@
       "sales": 5610,
       "stock": 200,
       "rating": 4.8,
-      "ratio": 1.1,
+      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
       ],
       "images": [
-        "img/p019-1.svg",
-        "img/p019-2.svg",
-        "img/p019-3.svg"
+        "img/p019-1.webp",
+        "img/p019-2.webp",
+        "img/p019-3.webp"
       ],
-      "cover": "img/p019-1.svg",
+      "cover": "img/p019-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1428,8 +1428,8 @@
     {
       "id": "p020",
       "no": "020",
-      "title": "云南小粒咖啡挂耳",
-      "subtitle": "中深烘 · 10 片独立装",
+      "title": "冻干黑咖啡",
+      "subtitle": "中深烘 · 零糖零脂",
       "categoryId": "food",
       "categoryName": "食品",
       "price": 69,
@@ -1442,11 +1442,11 @@
         "包邮"
       ],
       "images": [
-        "img/p020-1.svg",
-        "img/p020-2.svg",
-        "img/p020-3.svg"
+        "img/p020-1.webp",
+        "img/p020-2.webp",
+        "img/p020-3.webp"
       ],
-      "cover": "img/p020-1.svg",
+      "cover": "img/p020-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1496,8 +1496,8 @@
     {
       "id": "p021",
       "no": "021",
-      "title": "古法手工红糖姜茶",
-      "subtitle": "独立小袋 · 经期常备",
+      "title": "NFC 鲜榨橙汁",
+      "subtitle": "100% 果汁 · 0 添加",
       "categoryId": "food",
       "categoryName": "食品",
       "price": 49,
@@ -1505,16 +1505,16 @@
       "sales": 23150,
       "stock": 1000,
       "rating": 4.5,
-      "ratio": 1.2,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p021-1.svg",
-        "img/p021-2.svg",
-        "img/p021-3.svg"
+        "img/p021-1.webp",
+        "img/p021-2.webp",
+        "img/p021-3.webp"
       ],
-      "cover": "img/p021-1.svg",
+      "cover": "img/p021-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1564,8 +1564,8 @@
     {
       "id": "p022",
       "no": "022",
-      "title": "海盐黑巧坚果礼盒",
-      "subtitle": "六种坚果 · 低糖配方",
+      "title": "分离乳清蛋白粉",
+      "subtitle": "低脂高蛋白 · 独立量勺",
       "categoryId": "food",
       "categoryName": "食品",
       "price": 119,
@@ -1573,16 +1573,16 @@
       "sales": 8720,
       "stock": 350,
       "rating": 4.6,
-      "ratio": 0.95,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p022-1.svg",
-        "img/p022-2.svg",
-        "img/p022-3.svg"
+        "img/p022-1.webp",
+        "img/p022-2.webp",
+        "img/p022-3.webp"
       ],
-      "cover": "img/p022-1.svg",
+      "cover": "img/p022-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1628,8 +1628,8 @@
     {
       "id": "p023",
       "no": "023",
-      "title": "当日现摘阳光玫瑰",
-      "subtitle": "云南建水 · 甜度 18 度",
+      "title": "当日现摘奶油草莓",
+      "subtitle": "云南空运 · 甜度 12+",
       "categoryId": "food",
       "categoryName": "食品",
       "price": 88,
@@ -1637,16 +1637,16 @@
       "sales": 6940,
       "stock": 160,
       "rating": 4.4,
-      "ratio": 1.15,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p023-1.svg",
-        "img/p023-2.svg",
-        "img/p023-3.svg"
+        "img/p023-1.webp",
+        "img/p023-2.webp",
+        "img/p023-3.webp"
       ],
-      "cover": "img/p023-1.svg",
+      "cover": "img/p023-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1707,11 +1707,11 @@
         "包邮"
       ],
       "images": [
-        "img/p024-1.svg",
-        "img/p024-2.svg",
-        "img/p024-3.svg"
+        "img/p024-1.webp",
+        "img/p024-2.webp",
+        "img/p024-3.webp"
       ],
-      "cover": "img/p024-1.svg",
+      "cover": "img/p024-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1761,8 +1761,8 @@
     {
       "id": "p025",
       "no": "025",
-      "title": "水感保湿精华水",
-      "subtitle": "5% 烟酰胺 · 敏感肌可用",
+      "title": "水感保湿身体乳",
+      "subtitle": "24h 长效润泽 · 敏感肌可用",
       "categoryId": "beauty",
       "categoryName": "美妆",
       "price": 179,
@@ -1770,16 +1770,16 @@
       "sales": 14280,
       "stock": 260,
       "rating": 4.8,
-      "ratio": 1.25,
+      "ratio": 1,
       "tags": [
         "热卖"
       ],
       "images": [
-        "img/p025-1.svg",
-        "img/p025-2.svg",
-        "img/p025-3.svg"
+        "img/p025-1.webp",
+        "img/p025-2.webp",
+        "img/p025-3.webp"
       ],
-      "cover": "img/p025-1.svg",
+      "cover": "img/p025-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1829,8 +1829,8 @@
     {
       "id": "p026",
       "no": "026",
-      "title": "素颜防晒乳 SPF50+",
-      "subtitle": "不泛白 · 成膜快",
+      "title": "氨基酸温和洁面乳",
+      "subtitle": "弱酸性 · 洗后不紧绷",
       "categoryId": "beauty",
       "categoryName": "美妆",
       "price": 129,
@@ -1838,17 +1838,17 @@
       "sales": 26540,
       "stock": 500,
       "rating": 4.7,
-      "ratio": 1.1,
+      "ratio": 1,
       "tags": [
         "包邮",
         "热卖"
       ],
       "images": [
-        "img/p026-1.svg",
-        "img/p026-2.svg",
-        "img/p026-3.svg"
+        "img/p026-1.webp",
+        "img/p026-2.webp",
+        "img/p026-3.webp"
       ],
-      "cover": "img/p026-1.svg",
+      "cover": "img/p026-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1898,8 +1898,8 @@
     {
       "id": "p027",
       "no": "027",
-      "title": "丝绒雾面口红礼盒",
-      "subtitle": "三支装 · 显白不挑皮",
+      "title": "丝绒雾面口红",
+      "subtitle": "显白不挑皮 · 三色可选",
       "categoryId": "beauty",
       "categoryName": "美妆",
       "price": 199,
@@ -1912,11 +1912,11 @@
         "新品"
       ],
       "images": [
-        "img/p027-1.svg",
-        "img/p027-2.svg",
-        "img/p027-3.svg"
+        "img/p027-1.webp",
+        "img/p027-2.webp",
+        "img/p027-3.webp"
       ],
-      "cover": "img/p027-1.svg",
+      "cover": "img/p027-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1970,8 +1970,8 @@
     {
       "id": "p028",
       "no": "028",
-      "title": "氨基酸温和洁面",
-      "subtitle": "弱酸性 · 洗后不紧绷",
+      "title": "男士清爽润肤乳",
+      "subtitle": "不粘腻 · 控油保湿",
       "categoryId": "beauty",
       "categoryName": "美妆",
       "price": 89,
@@ -1979,16 +1979,16 @@
       "sales": 18750,
       "stock": 640,
       "rating": 4.7,
-      "ratio": 1.2,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p028-1.svg",
-        "img/p028-2.svg",
-        "img/p028-3.svg"
+        "img/p028-1.webp",
+        "img/p028-2.webp",
+        "img/p028-3.webp"
       ],
-      "cover": "img/p028-1.svg",
+      "cover": "img/p028-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2038,8 +2038,8 @@
     {
       "id": "p029",
       "no": "029",
-      "title": "头皮护理洗发水",
-      "subtitle": "无硅油 · 蓬松控油",
+      "title": "大地色十二色眼影盘",
+      "subtitle": "哑光珠光 · 附镜便携",
       "categoryId": "beauty",
       "categoryName": "美妆",
       "price": 109,
@@ -2047,16 +2047,16 @@
       "sales": 12460,
       "stock": 380,
       "rating": 4.5,
-      "ratio": 1.3,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p029-1.svg",
-        "img/p029-2.svg",
-        "img/p029-3.svg"
+        "img/p029-1.webp",
+        "img/p029-2.webp",
+        "img/p029-3.webp"
       ],
-      "cover": "img/p029-1.svg",
+      "cover": "img/p029-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2115,16 +2115,16 @@
       "sales": 5820,
       "stock": 140,
       "rating": 4.8,
-      "ratio": 1.05,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p030-1.svg",
-        "img/p030-2.svg",
-        "img/p030-3.svg"
+        "img/p030-1.webp",
+        "img/p030-2.webp",
+        "img/p030-3.webp"
       ],
-      "cover": "img/p030-1.svg",
+      "cover": "img/p030-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2189,11 +2189,11 @@
         "包邮"
       ],
       "images": [
-        "img/p031-1.svg",
-        "img/p031-2.svg",
-        "img/p031-3.svg"
+        "img/p031-1.webp",
+        "img/p031-2.webp",
+        "img/p031-3.webp"
       ],
-      "cover": "img/p031-1.svg",
+      "cover": "img/p031-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2263,8 +2263,8 @@
     {
       "id": "p032",
       "no": "032",
-      "title": "专业瑜伽垫 8mm",
-      "subtitle": "防滑双面 · 送绑带",
+      "title": "专业比赛篮球 7 号",
+      "subtitle": "室内外通用 · 吸湿防滑",
       "categoryId": "sport",
       "categoryName": "运动",
       "price": 139,
@@ -2272,16 +2272,16 @@
       "sales": 15230,
       "stock": 400,
       "rating": 4.7,
-      "ratio": 1.1,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p032-1.svg",
-        "img/p032-2.svg",
-        "img/p032-3.svg"
+        "img/p032-1.webp",
+        "img/p032-2.webp",
+        "img/p032-3.webp"
       ],
-      "cover": "img/p032-1.svg",
+      "cover": "img/p032-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2335,8 +2335,8 @@
     {
       "id": "p033",
       "no": "033",
-      "title": "智能跳绳 T2",
-      "subtitle": "自动计数 · 蓝牙同步",
+      "title": "碳纤维网球拍",
+      "subtitle": "初学进阶两用 · 已穿线",
       "categoryId": "sport",
       "categoryName": "运动",
       "price": 99,
@@ -2344,16 +2344,16 @@
       "sales": 9840,
       "stock": 520,
       "rating": 4.5,
-      "ratio": 1.2,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p033-1.svg",
-        "img/p033-2.svg",
-        "img/p033-3.svg"
+        "img/p033-1.webp",
+        "img/p033-2.webp",
+        "img/p033-3.webp"
       ],
-      "cover": "img/p033-1.svg",
+      "cover": "img/p033-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2403,8 +2403,8 @@
     {
       "id": "p034",
       "no": "034",
-      "title": "速干短袖训练服",
-      "subtitle": "冰丝面料 · 出汗不粘身",
+      "title": "美式橄榄球训练用球",
+      "subtitle": "9 号标准 · 耐磨胶皮",
       "categoryId": "sport",
       "categoryName": "运动",
       "price": 89,
@@ -2412,16 +2412,16 @@
       "sales": 21470,
       "stock": 780,
       "rating": 4.6,
-      "ratio": 1.3,
+      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
-        "img/p034-1.svg",
-        "img/p034-2.svg",
-        "img/p034-3.svg"
+        "img/p034-1.webp",
+        "img/p034-2.webp",
+        "img/p034-3.webp"
       ],
-      "cover": "img/p034-1.svg",
+      "cover": "img/p034-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2483,8 +2483,8 @@
     {
       "id": "p035",
       "no": "035",
-      "title": "折叠健身哑铃",
-      "subtitle": "一对装 · 可拆卸配重",
+      "title": "高尔夫七号铁杆",
+      "subtitle": "碳素杆身 · 容错率高",
       "categoryId": "sport",
       "categoryName": "运动",
       "price": 199,
@@ -2497,11 +2497,11 @@
         "包邮"
       ],
       "images": [
-        "img/p035-1.svg",
-        "img/p035-2.svg",
-        "img/p035-3.svg"
+        "img/p035-1.webp",
+        "img/p035-2.webp",
+        "img/p035-3.webp"
       ],
-      "cover": "img/p035-1.svg",
+      "cover": "img/p035-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2551,8 +2551,8 @@
     {
       "id": "p036",
       "no": "036",
-      "title": "户外露营折叠椅",
-      "subtitle": "承重 150kg · 一秒收纳",
+      "title": "棒球内场手套",
+      "subtitle": "头层牛皮 · 即买即用",
       "categoryId": "sport",
       "categoryName": "运动",
       "price": 169,
@@ -2560,16 +2560,16 @@
       "sales": 6180,
       "stock": 240,
       "rating": 4.6,
-      "ratio": 1.15,
+      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
-        "img/p036-1.svg",
-        "img/p036-2.svg",
-        "img/p036-3.svg"
+        "img/p036-1.webp",
+        "img/p036-2.webp",
+        "img/p036-3.webp"
       ],
-      "cover": "img/p036-1.svg",
+      "cover": "img/p036-1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2620,5 +2620,6 @@
       "c1": "#d94f3d",
       "c2": "#ff9877"
     }
-  ]
+  ],
+  "imageSource": "DummyJSON 公开测试商品图（cdn.dummyjson.com），已下载到本地，映射见 scripts/fetch-images.mjs"
 }

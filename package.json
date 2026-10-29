@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "seed": "node scripts/gen-seed.mjs && node scripts/gen-icons.mjs",
+    "images": "node scripts/fetch-images.mjs",
     "icons": "node scripts/gen-icons.mjs",
     "dev": "vite",
     "build": "vite build",
