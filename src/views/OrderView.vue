@@ -71,7 +71,7 @@
       <section class="card-block">
         <h2 class="block-title">商品清单（{{ items.length }} 件）</h2>
         <div v-for="it in items" :key="it.key" class="goods">
-          <img class="thumb" :src="`/${it.cover}`" :alt="it.title" />
+          <img class="thumb" :src="imgSrc(it.cover)" :alt="it.title" />
           <div class="goods-info">
             <p class="goods-name clamp-2">{{ it.title }}</p>
             <span v-if="it.specText" class="goods-spec">{{ it.specText }}</span>
@@ -130,6 +130,7 @@ import { ref, reactive, computed, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 
 import { useCartStore } from '../stores/cart'
+import { imgSrc } from '../utils/format'
 import { createOrder } from '../utils/request'
 import { toast, toastWarn } from '../composables/useToast'
 

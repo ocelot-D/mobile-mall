@@ -30,7 +30,7 @@
           </button>
 
           <router-link :to="`/product/${it.id}`" class="thumb">
-            <img :src="`/${it.cover}`" :alt="it.title" />
+            <img :src="imgSrc(it.cover)" :alt="it.title" />
           </router-link>
 
           <div class="info">
@@ -100,6 +100,7 @@
 
 import { useRouter } from 'vue-router'
 import { useCartStore } from '../stores/cart'
+import { imgSrc } from '../utils/format'
 import { toast } from '../composables/useToast'
 
 const router = useRouter()

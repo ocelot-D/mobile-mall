@@ -5,7 +5,7 @@
       把它传给 LazyImg，图片没加载完坑位就占好了 —— 这是 CLS（布局抖动）为 0 的关键。
     -->
     <LazyImg
-      :src="base + product.cover"
+      :src="imgSrc(product.cover)"
       :ratio="product.ratio"
       :alt="product.title"
       :c1="product.c1"
@@ -42,7 +42,7 @@
 
 import { useRouter } from 'vue-router'
 import LazyImg from './LazyImg.vue'
-import { formatSales } from '../utils/format'
+import { formatSales, imgSrc } from '../utils/format'
 
 const props = defineProps({
   product: { type: Object, required: true },

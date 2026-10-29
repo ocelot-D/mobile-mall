@@ -104,7 +104,7 @@
           <LazyImg
             v-for="(src, i) in product.images"
             :key="src"
-            :src="`/${src}`"
+            :src="imgSrc(src)"
             :ratio="product.ratio"
             :c1="product.c1"
             :c2="product.c2"
@@ -157,7 +157,7 @@ import { useRoute, useRouter } from 'vue-router'
 import BannerSwiper from '../components/BannerSwiper.vue'
 import LazyImg from '../components/LazyImg.vue'
 import { getProduct } from '../utils/request'
-import { formatSales } from '../utils/format'
+import { formatSales, imgSrc } from '../utils/format'
 import { useCartStore } from '../stores/cart'
 import { toastOk, toastWarn } from '../composables/useToast'
 

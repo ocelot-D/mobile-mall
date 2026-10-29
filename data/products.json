@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T14:17:45.005Z",
+  "generatedAt": "2026-10-29T14:35:15.892Z",
   "categories": [
     {
       "id": "digital",
@@ -78,11 +78,11 @@
         "热卖"
       ],
       "images": [
-        "img/p001-1.webp",
-        "img/p001-2.webp",
-        "img/p001-3.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp"
       ],
-      "cover": "img/p001-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -146,11 +146,11 @@
         "包邮"
       ],
       "images": [
-        "img/p002-1.webp",
-        "img/p002-2.webp",
-        "img/p002-3.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp"
       ],
-      "cover": "img/p002-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -214,11 +214,11 @@
         "新品"
       ],
       "images": [
-        "img/p003-1.webp",
-        "img/p003-2.webp",
-        "img/p003-3.webp"
+        "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/1.webp",
+        "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/2.webp",
+        "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/3.webp"
       ],
-      "cover": "img/p003-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -282,11 +282,11 @@
         "包邮"
       ],
       "images": [
-        "img/p004-1.webp",
-        "img/p004-2.webp",
-        "img/p004-3.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp"
       ],
-      "cover": "img/p004-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -350,11 +350,11 @@
         "热卖"
       ],
       "images": [
-        "img/p005-1.webp",
-        "img/p005-2.webp",
-        "img/p005-3.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/2.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/3.webp"
       ],
-      "cover": "img/p005-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -419,11 +419,11 @@
         "包邮"
       ],
       "images": [
-        "img/p006-1.webp",
-        "img/p006-2.webp",
-        "img/p006-3.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp"
       ],
-      "cover": "img/p006-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -484,11 +484,11 @@
         "包邮"
       ],
       "images": [
-        "img/p007-1.webp",
-        "img/p007-2.webp",
-        "img/p007-3.webp"
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp"
       ],
-      "cover": "img/p007-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -560,11 +560,11 @@
         "包邮"
       ],
       "images": [
-        "img/p008-1.webp",
-        "img/p008-2.webp",
-        "img/p008-3.webp"
+        "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
       ],
-      "cover": "img/p008-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -640,11 +640,11 @@
         "新品"
       ],
       "images": [
-        "img/p009-1.webp",
-        "img/p009-2.webp",
-        "img/p009-3.webp"
+        "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp",
+        "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/2.webp",
+        "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp"
       ],
-      "cover": "img/p009-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -720,11 +720,11 @@
         "包邮"
       ],
       "images": [
-        "img/p010-1.webp",
-        "img/p010-2.webp",
-        "img/p010-3.webp"
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp"
       ],
-      "cover": "img/p010-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -796,11 +796,11 @@
         "热卖"
       ],
       "images": [
-        "img/p011-1.webp",
-        "img/p011-2.webp",
-        "img/p011-3.webp"
+        "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp"
       ],
-      "cover": "img/p011-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -884,11 +884,11 @@
         "包邮"
       ],
       "images": [
-        "img/p012-1.webp",
-        "img/p012-2.webp",
-        "img/p012-3.webp"
+        "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp"
       ],
-      "cover": "img/p012-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -952,11 +952,11 @@
         "包邮"
       ],
       "images": [
-        "img/p013-1.webp",
-        "img/p013-2.webp",
-        "img/p013-3.webp"
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
       ],
-      "cover": "img/p013-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1025,11 +1025,11 @@
         "包邮"
       ],
       "images": [
-        "img/p014-1.webp",
-        "img/p014-2.webp",
-        "img/p014-3.webp"
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
       ],
-      "cover": "img/p014-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1101,11 +1101,11 @@
         "新品"
       ],
       "images": [
-        "img/p015-1.webp",
-        "img/p015-2.webp",
-        "img/p015-3.webp"
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/2.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp"
       ],
-      "cover": "img/p015-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1169,11 +1169,11 @@
         "包邮"
       ],
       "images": [
-        "img/p016-1.webp",
-        "img/p016-2.webp",
-        "img/p016-3.webp"
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
       ],
-      "cover": "img/p016-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1237,11 +1237,11 @@
         "包邮"
       ],
       "images": [
-        "img/p017-1.webp",
-        "img/p017-2.webp",
-        "img/p017-3.webp"
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/2.webp",
+        "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
       ],
-      "cover": "img/p017-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1305,11 +1305,11 @@
         "新品"
       ],
       "images": [
-        "img/p018-1.webp",
-        "img/p018-2.webp",
-        "img/p018-3.webp"
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp"
       ],
-      "cover": "img/p018-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1374,11 +1374,11 @@
         "包邮"
       ],
       "images": [
-        "img/p019-1.webp",
-        "img/p019-2.webp",
-        "img/p019-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
       ],
-      "cover": "img/p019-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1442,11 +1442,11 @@
         "包邮"
       ],
       "images": [
-        "img/p020-1.webp",
-        "img/p020-2.webp",
-        "img/p020-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp"
       ],
-      "cover": "img/p020-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1510,11 +1510,11 @@
         "包邮"
       ],
       "images": [
-        "img/p021-1.webp",
-        "img/p021-2.webp",
-        "img/p021-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
       ],
-      "cover": "img/p021-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1578,11 +1578,11 @@
         "新品"
       ],
       "images": [
-        "img/p022-1.webp",
-        "img/p022-2.webp",
-        "img/p022-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp"
       ],
-      "cover": "img/p022-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1642,11 +1642,11 @@
         "包邮"
       ],
       "images": [
-        "img/p023-1.webp",
-        "img/p023-2.webp",
-        "img/p023-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp"
       ],
-      "cover": "img/p023-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1707,11 +1707,11 @@
         "包邮"
       ],
       "images": [
-        "img/p024-1.webp",
-        "img/p024-2.webp",
-        "img/p024-3.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
       ],
-      "cover": "img/p024-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1775,11 +1775,11 @@
         "热卖"
       ],
       "images": [
-        "img/p025-1.webp",
-        "img/p025-2.webp",
-        "img/p025-3.webp"
+        "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/2.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/3.webp"
       ],
-      "cover": "img/p025-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1844,11 +1844,11 @@
         "热卖"
       ],
       "images": [
-        "img/p026-1.webp",
-        "img/p026-2.webp",
-        "img/p026-3.webp"
+        "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/2.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/3.webp"
       ],
-      "cover": "img/p026-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1912,11 +1912,11 @@
         "新品"
       ],
       "images": [
-        "img/p027-1.webp",
-        "img/p027-2.webp",
-        "img/p027-3.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
       ],
-      "cover": "img/p027-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -1984,11 +1984,11 @@
         "包邮"
       ],
       "images": [
-        "img/p028-1.webp",
-        "img/p028-2.webp",
-        "img/p028-3.webp"
+        "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/2.webp",
+        "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/3.webp"
       ],
-      "cover": "img/p028-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2052,11 +2052,11 @@
         "包邮"
       ],
       "images": [
-        "img/p029-1.webp",
-        "img/p029-2.webp",
-        "img/p029-3.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
       ],
-      "cover": "img/p029-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2120,11 +2120,11 @@
         "新品"
       ],
       "images": [
-        "img/p030-1.webp",
-        "img/p030-2.webp",
-        "img/p030-3.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
       ],
-      "cover": "img/p030-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2189,11 +2189,11 @@
         "包邮"
       ],
       "images": [
-        "img/p031-1.webp",
-        "img/p031-2.webp",
-        "img/p031-3.webp"
+        "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/2.webp",
+        "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp"
       ],
-      "cover": "img/p031-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2277,11 +2277,11 @@
         "包邮"
       ],
       "images": [
-        "img/p032-1.webp",
-        "img/p032-2.webp",
-        "img/p032-3.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp"
       ],
-      "cover": "img/p032-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2349,11 +2349,11 @@
         "新品"
       ],
       "images": [
-        "img/p033-1.webp",
-        "img/p033-2.webp",
-        "img/p033-3.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp"
       ],
-      "cover": "img/p033-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2417,11 +2417,11 @@
         "包邮"
       ],
       "images": [
-        "img/p034-1.webp",
-        "img/p034-2.webp",
-        "img/p034-3.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp"
       ],
-      "cover": "img/p034-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2497,11 +2497,11 @@
         "包邮"
       ],
       "images": [
-        "img/p035-1.webp",
-        "img/p035-2.webp",
-        "img/p035-3.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp"
       ],
-      "cover": "img/p035-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2565,11 +2565,11 @@
         "新品"
       ],
       "images": [
-        "img/p036-1.webp",
-        "img/p036-2.webp",
-        "img/p036-3.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/1.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/2.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/3.webp"
       ],
-      "cover": "img/p036-1.webp",
+      "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/1.webp",
       "specs": [
         {
           "name": "颜色",
@@ -2621,5 +2621,5 @@
       "c2": "#ff9877"
     }
   ],
-  "imageSource": "DummyJSON 公开测试商品图（cdn.dummyjson.com），已下载到本地，映射见 scripts/fetch-images.mjs"
+  "imageSource": "DummyJSON 公开测试商品图，实时经后端 /api/img 代理拉取，本地不存图"
 }

@@ -51,6 +51,11 @@ const PORT = process.env.PORT || 3002
 // 想去掉延迟：启动时加环境变量 MOBI_DELAY=0
 const DELAY = Number(process.env.MOBI_DELAY ?? 120)
 
+// ─── 图片代理白名单 ─────────────────────────────────────────────────────────
+// 只放行这几个域名的图片。图片代理如果不做白名单，
+// 任何人都能拿它去请求任意网址（包括内网地址），这就是典型的 SSRF 漏洞。
+const IMG_HOSTS = ['cdn.dummyjson.com', 'dummyjson.com']
+
 // ============================================================================
 // 数据在内存里的缓存
 // ============================================================================
@@ -240,6 +245,50 @@ async function handleApi(req, res, url) {
   // ─── GET /api/health ─────────────────────────────────────────────────────
   if (pathname === '/api/health' && req.method === 'GET') {
     return sendOk(res, { service: 'mobimall', products: catalog.products.length, orders: Object.keys(orders).length, time: Date.now() })
+  }
+
+  // ─── GET /api/img 图片代理（实时拉远程商品图） ────────────────────────────
+  // 用法：/api/img?u=https://cdn.dummyjson.com/product-images/xxx/1.webp
+  //
+  // 为什么要绕一层代理，而不是让浏览器直接去取远程图：
+  //   1. 防盗链：很多图床会检查 Referer，浏览器直接请求会被拒（返回 403）
+  //      服务器去取没有 Referer，不会被拦
+  //   2. 协议混合：页面是 https，图源若是 http 会被浏览器直接拦掉
+  //   3. 统一出口：以后换图源只改这里，前端和商品数据都不用动
+  //
+  // 安全：只允许白名单域名，否则就成了"任意网址转发器"（SSRF 漏洞），
+  //       别人可以拿它去打内网。这是必须加的一道闸。
+  if (pathname === '/api/img' && req.method === 'GET') {
+    const raw = q.get('u') || ''
+    let target
+    try {
+      target = new URL(raw)
+    } catch {
+      return sendFail(res, 400, '图片地址不合法')
+    }
+    if (!IMG_HOSTS.includes(target.hostname)) {
+      return sendFail(res, 403, '图源不在白名单内：' + target.hostname)
+    }
+
+    try {
+      const upstream = await fetch(target.href, {
+        signal: AbortSignal.timeout(12000),
+        headers: { 'User-Agent': 'MobiMall/1.0', Accept: 'image/*' },
+      })
+      if (!upstream.ok) return sendFail(res, 502, '图源返回 ' + upstream.status)
+
+      const buf = Buffer.from(await upstream.arrayBuffer())
+      res.writeHead(200, {
+        'Content-Type': upstream.headers.get('content-type') || 'image/webp',
+        'Content-Length': buf.length,
+        // 短缓存 5 分钟：既保证"实时"（换图 5 分钟内生效），
+        // 又避免同一个用户来回翻页面时每次都重新下载一遍，省流量
+        'Cache-Control': 'public, max-age=300',
+      })
+      return res.end(buf)
+    } catch (err) {
+      return sendFail(res, 502, '取图失败：' + err.message)
+    }
   }
 
   // ─── GET /api/categories ─────────────────────────────────────────────────
