@@ -1,0 +1,331 @@
+/* ==========================================================================
+   MobiMall 全局样式
+   ==========================================================================
+   这个文件是整个项目"移动端适配"的核心，分成五块：
+
+     一、适配基准    rem 基准字号 + 大屏封顶，全程不用死 px
+     二、设计变量    颜色 / 间距 / 圆角 / 层级，统一在一处改
+     三、安全区      100dvh 与 env(safe-area-inset-*)，避开刘海和底部横条
+     四、触摸反馈    :active 状态 + 44px 最小点击区
+     五、低端机降级  .low-end 类关掉毛玻璃和渐变动画；prefers-reduced-motion 兜底
+
+   面试怎么讲这块（JD 加分项「移动端页面开发」的得分点）：
+     1. 基准用 vw 换算 rem：屏幕越宽，1rem 越大，所有尺寸自动等比缩放
+     2. 大屏封顶：不做封顶的话平板上字会大到离谱
+     3. 100dvh 解决手机地址栏收起时 vh 不更新、内容被截掉一块的老问题
+     4. env(safe-area-inset-bottom) 避开 iPhone 底部横条压住按钮
+     5. 所有 :hover 都补 :active，手机上没有 hover，不补就等于点下去没反应
+     6. 可点区域统一 ≥44px，这是苹果人机规范给的下限
+   ========================================================================== */
+
+/* ==========================================================================
+   一、适配基准
+   ========================================================================== */
+/*
+  375px 是 iPhone 设计稿的标准宽度。
+  这里让 1rem = 屏幕宽度的 1/3.75，即 375px 宽的手机上 1rem = 100px。
+  好处：写 CSS 的时候可以直接按"设计稿 px / 100"心算，比如设计稿 32px 就写 .32rem。
+
+  为什么不用 px？
+    死 px 在窄屏（320px）会挤爆、在宽屏（428px）会显得空，都要单独写媒体查询救。
+    用 rem 之后一份代码自动适配所有宽度。
+*/
+html {
+  font-size: calc(100vw / 3.75);
+  /* 禁止双指缩放之外的手势干扰，配合 index.html 的 viewport 设置 */
+  -webkit-text-size-adjust: 100%;
+}
+
+/*
+  封顶：屏幕宽度超过 480px 后不再放大。
+  不封顶的话，iPad 上 1rem 会变成两百多 px，整个页面变成巨人国。
+  480/3.75 = 128px，正好衔接上，不会出现跳变。
+*/
+@media (min-width: 480px) {
+  html { font-size: 128px; }
+}
+
+/*
+  极端窄屏兜底：320px 以下的设备（iPhone SE 一代等）保证还能看
+*/
+@media (max-width: 320px) {
+  html { font-size: 85.33px; }
+}
+
+/* ==========================================================================
+   二、设计变量
+   ========================================================================== */
+:root {
+  /* 主色用商城橙：橙色在电商里代表"促销、立即下单"，红色太像报错 */
+  --brand: #ff5000;
+  --brand-dark: #e04600;
+  --brand-soft: #fff1eb;
+
+  /* 文字三级灰 */
+  --ink: #1a1a1a;
+  --ink-2: #5a5a5a;
+  --ink-3: #9a9a9a;
+
+  /* 背景与分割线 */
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --line: #ededf0;
+
+  /* 辅助色 */
+  --blue: #185fa5;
+  --green: #0f6e56;
+
+  /* 间距：统一用 rem，改一个值全站生效 */
+  --gap-xs: 0.06rem;
+  --gap-sm: 0.1rem;
+  --gap: 0.14rem;
+  --gap-lg: 0.2rem;
+
+  /* 圆角 */
+  --r-sm: 0.06rem;
+  --r: 0.12rem;
+  --r-lg: 0.2rem;
+
+  /* 底部 Tab 栏高度（不含安全区），多处要用到所以提成变量 */
+  --tab-h: 0.5rem;
+
+  /* 最小点击区：苹果人机规范 44pt，换算成我们的 rem 基准就是 0.44rem。
+     为什么是 44：成年人指尖平均宽度约 44pt，小于这个就容易点错 */
+  --tap: 0.44rem;
+
+  /* 顶部安全区高度（刘海屏状态栏），没有则用 0 */
+  --safe-top: env(safe-area-inset-top, 0px);
+  /* 底部安全区高度（iPhone 底部横条），没有则用 0 */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+
+  /* 毛玻璃强度：低端机上会被 JS 置为 none */
+  --blur: blur(0.12rem);
+}
+
+/* ==========================================================================
+   重置
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  /* 去掉移动端点击时那层蓝色高亮块，改成我们自己写的 :active 反馈 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  /* 不写 clamp 是因为基准字号已经随屏幕变化了，这里只定相对倍数 */
+  font-size: 0.14rem;
+  line-height: 1.5;
+  /* 禁止横向橡皮筋：手机上左右滑动会露出白边，很难看 */
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, p, figure { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+img { display: block; max-width: 100%; }
+button, input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  /* iOS 上 input 默认会有内阴影和圆角，得手动清掉 */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* ==========================================================================
+   三、安全区与视口高度
+   ========================================================================== */
+/*
+  100dvh（dynamic viewport height）是移动端最容易被忽略的坑：
+
+  用 100vh 时，手机浏览器的地址栏在页面滚动后会收起，
+  但 vh 是按"地址栏展开时的视口"算的，不会跟着变，
+  结果就是页面底部永远有约 60px 被地址栏挡住。
+
+  dvh 是动态视口，地址栏收起时它跟着变大，所以内容不会被截。
+  老浏览器不支持 dvh，所以先写 100vh 兜底，再写 100dvh 覆盖。
+*/
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  /* 顶部留出状态栏高度，刘海屏才不会把内容顶到信号栏里 */
+  padding-top: var(--safe-top);
+}
+
+/*
+  内容区底部留白 = Tab 栏高度 + 底部安全区 + 一点呼吸空间
+  少了这块，最后一条商品会被底部 Tab 栏或者 iPhone 横条压住
+*/
+.has-tabbar {
+  padding-bottom: calc(var(--tab-h) + var(--safe-bottom) + 0.1rem);
+}
+
+/* ==========================================================================
+   四、触摸反馈与点击区
+   ========================================================================== */
+/*
+  手机上没有鼠标悬停，:hover 在触屏上要么不触发、要么点完一直留着不消失。
+  所以：凡是写了 :hover 的地方，必须同时写 :active，让手指按下时有反应。
+*/
+.tap {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  /* 过渡只写 transform 和 opacity：这两个属性走 GPU，不触发重排，手机上不掉帧。
+     千万别写 transition: all，会把布局属性也纳入过渡，滚动时卡 */
+  transition: transform 0.12s ease, opacity 0.12s ease, background-color 0.15s ease;
+}
+
+.tap:active {
+  /* 按下去缩一点点，是最便宜也最有效的"点到了"反馈 */
+  transform: scale(0.96);
+  opacity: 0.75;
+}
+
+/*
+  可点区域兜底：图标本身很小（比如 20px），但手指点不准。
+  这里强制最小 44×44，视觉上还是小图标，但热区够大。
+*/
+.tap-44 {
+  min-width: var(--tap);
+  min-height: var(--tap);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+  更狠的一招：视觉元素很小时，用伪元素把热区向外撑开，
+  不动布局、不改视觉，只扩大可点范围。
+*/
+.tap-expand::after {
+  content: '';
+  position: absolute;
+  /* 向外各扩 8px，凑够 44px 热区 */
+  top: -0.08rem; right: -0.08rem; bottom: -0.08rem; left: -0.08rem;
+}
+
+/* ==========================================================================
+   五、低端机降级
+   ========================================================================== */
+/*
+  .low-end 这个类是 JS 判断出来的（见 composables/useDeviceTier.js）：
+   CPU 核心数少、内存小、或者用户手动开了"流畅模式"。
+
+  为什么要降级？
+   毛玻璃 backdrop-filter 和多层渐变动画需要 GPU 反复合成图层，
+   中低端安卓机上滚动时每一帧都要重算，直接掉到 20 FPS。
+   关掉之后视觉差一点，但滚动是顺的 —— 移动端宁可少一个效果，也不能卡。
+*/
+.low-end {
+  --blur: none;
+}
+
+.low-end .glass,
+.low-end .heavy-effect {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  /* 毛玻璃关掉后背景会变透明看不清，补一个实色兜底 */
+  background: rgba(255, 255, 255, 0.96) !important;
+}
+
+/* 渐变动画、呼吸灯这类持续动画，低端机直接停掉 */
+.low-end .animated-bg {
+  animation: none !important;
+  background-image: none !important;
+}
+
+/*
+  prefers-reduced-motion 是系统级设置（安卓"移除动画"、iOS"减弱动态效果"）。
+  用户开了就说明他晕动效或者想省电，必须尊重。
+  这一条和 .low-end 是两回事：前者是用户偏好，后者是设备性能。
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   通用工具类
+   ========================================================================== */
+
+/* 卡片：白底 + 圆角 + 极淡的阴影（移动端阴影要克制，重阴影很廉价） */
+.card {
+  background: var(--card);
+  border-radius: var(--r);
+  box-shadow: 0 0.01rem 0.06rem rgba(0, 0, 0, 0.04);
+}
+
+/* 文字省略 */
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 价格字体：数字用等宽字形，价格跳动时不会左右抖 */
+.price {
+  color: var(--brand);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 骨架屏微光动画（加载态用，比转圈更接近真实布局） */
+@keyframes shimmer {
+  0%   { background-position: -2rem 0; }
+  100% { background-position: calc(2rem + 100%) 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, #eee 25%, #f5f5f5 37%, #eee 63%);
+  background-size: 4rem 100%;
+  animation: shimmer 1.2s infinite linear;
+}
+.low-end .skeleton { animation: none; }
+
+/* 淡入：图片加载完成后用，避免"啪"一下出现 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* 路由切换动画 */
+.fade-enter-active, .fade-leave-active { transition: opacity 0.18s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+.slide-enter-active, .slide-leave-active { transition: transform 0.22s ease, opacity 0.22s ease; }
+.slide-enter-from { transform: translateX(100%); opacity: 0.6; }
+.slide-leave-to { transform: translateX(-20%); opacity: 0; }
+
+/* 隐藏滚动条：横向分类条不要那条黑杠，但依然能滑 */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* 桌面端预览：把 H5 限制在 480px 宽居中显示，电脑上看才像个手机 */
+@media (min-width: 600px) {
+  body { background: #e8e8ec; }
+  .app-shell {
+    max-width: 480px !important;
+    margin: 0 auto;
+    /* 电脑上看时加个阴影，像一台手机摆在桌面上 */
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.12);
+    background: var(--bg);
+    min-height: 100vh;
+  }
+}

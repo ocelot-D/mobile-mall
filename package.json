@@ -1,0 +1,24 @@
+{
+  "name": "mobimall",
+  "version": "1.0.0",
+  "description": "MobiMall - 移动端 H5 商城（Vue 3 + Vite 前端 + Node 零依赖后端）",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node scripts/gen-seed.mjs",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "node server/api-server.js",
+    "start": "node server/api-server.js"
+  },
+  "dependencies": {
+    "pinia": "^3.0.3",
+    "vue": "^3.5.44",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.5"
+  }
+}

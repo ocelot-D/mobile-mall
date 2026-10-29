@@ -1,0 +1,2624 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-29T12:03:18.579Z",
+  "categories": [
+    {
+      "id": "digital",
+      "name": "数码",
+      "icon": "phone",
+      "img": "img/cat-digital.svg"
+    },
+    {
+      "id": "apparel",
+      "name": "服饰",
+      "icon": "shirt",
+      "img": "img/cat-apparel.svg"
+    },
+    {
+      "id": "home",
+      "name": "家居",
+      "icon": "home",
+      "img": "img/cat-home.svg"
+    },
+    {
+      "id": "food",
+      "name": "食品",
+      "icon": "cup",
+      "img": "img/cat-food.svg"
+    },
+    {
+      "id": "beauty",
+      "name": "美妆",
+      "icon": "drop",
+      "img": "img/cat-beauty.svg"
+    },
+    {
+      "id": "sport",
+      "name": "运动",
+      "icon": "run",
+      "img": "img/cat-sport.svg"
+    }
+  ],
+  "banners": [
+    {
+      "id": "b1",
+      "img": "img/b1.svg",
+      "title": "新人首单立减 30",
+      "sub": "满 99 元可用 · 限新用户"
+    },
+    {
+      "id": "b2",
+      "img": "img/b2.svg",
+      "title": "夏季清仓 低至 5 折",
+      "sub": "每日 10 点上新 · 售完即止"
+    },
+    {
+      "id": "b3",
+      "img": "img/b3.svg",
+      "title": "会员日 全场包邮",
+      "sub": "周末下单再返 5% 积分"
+    }
+  ],
+  "products": [
+    {
+      "id": "p001",
+      "no": "001",
+      "title": "静界 Pro 无线降噪耳机",
+      "subtitle": "主动降噪 · 单次续航 12 小时",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 399,
+      "originPrice": 599,
+      "sales": 8421,
+      "stock": 86,
+      "rating": 4.8,
+      "ratio": 1,
+      "tags": [
+        "包邮",
+        "热卖"
+      ],
+      "images": [
+        "img/p001-1.svg",
+        "img/p001-2.svg",
+        "img/p001-3.svg"
+      ],
+      "cover": "img/p001-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "曜石黑",
+              "delta": 0
+            },
+            {
+              "label": "月光白",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "标准版",
+              "delta": 0
+            },
+            {
+              "label": "降噪版",
+              "delta": 120
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM001"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "主动降噪 · 单次续航 12 小时。静界 Pro 无线降噪耳机采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p002",
+      "no": "002",
+      "title": "轻石 65W 氮化镓充电器",
+      "subtitle": "三口同充 · 笔记本也能喂饱",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 129,
+      "originPrice": 189,
+      "sales": 15230,
+      "stock": 240,
+      "rating": 4.7,
+      "ratio": 1.25,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p002-1.svg",
+        "img/p002-2.svg",
+        "img/p002-3.svg"
+      ],
+      "cover": "img/p002-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "深空灰",
+              "delta": 0
+            },
+            {
+              "label": "奶白",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "单口",
+              "delta": 0
+            },
+            {
+              "label": "双口",
+              "delta": 40
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM002"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "三口同充 · 笔记本也能喂饱。轻石 65W 氮化镓充电器采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p003",
+      "no": "003",
+      "title": "掌阅 X5 电子墨水屏",
+      "subtitle": "6.8 英寸 · 冷暖双色温前光",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 899,
+      "originPrice": 1199,
+      "sales": 3260,
+      "stock": 42,
+      "rating": 4.6,
+      "ratio": 1.33,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p003-1.svg",
+        "img/p003-2.svg",
+        "img/p003-3.svg"
+      ],
+      "cover": "img/p003-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "墨黑",
+              "delta": 0
+            },
+            {
+              "label": "雾蓝",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "16G",
+              "delta": 0
+            },
+            {
+              "label": "32G",
+              "delta": 150
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM003"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "6.8 英寸 · 冷暖双色温前光。掌阅 X5 电子墨水屏采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p004",
+      "no": "004",
+      "title": "随行 5000mAh 磁吸电源",
+      "subtitle": "卡片机身 · 一贴即充",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 159,
+      "originPrice": 229,
+      "sales": 6742,
+      "stock": 150,
+      "rating": 4.5,
+      "ratio": 0.9,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p004-1.svg",
+        "img/p004-2.svg",
+        "img/p004-3.svg"
+      ],
+      "cover": "img/p004-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "石墨黑",
+              "delta": 0
+            },
+            {
+              "label": "远峰蓝",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "5000mAh",
+              "delta": 0
+            },
+            {
+              "label": "10000mAh",
+              "delta": 70
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM004"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "卡片机身 · 一贴即充。随行 5000mAh 磁吸电源采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p005",
+      "no": "005",
+      "title": "极简机械键盘 K3",
+      "subtitle": "低音红轴 · 三模连接",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 329,
+      "originPrice": 459,
+      "sales": 2180,
+      "stock": 63,
+      "rating": 4.7,
+      "ratio": 1.15,
+      "tags": [
+        "热卖"
+      ],
+      "images": [
+        "img/p005-1.svg",
+        "img/p005-2.svg",
+        "img/p005-3.svg"
+      ],
+      "cover": "img/p005-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "暗夜",
+              "delta": 0
+            },
+            {
+              "label": "奶油",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "68 键",
+              "delta": 0
+            },
+            {
+              "label": "87 键",
+              "delta": 60
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM005"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "低音红轴 · 三模连接。极简机械键盘 K3采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p006",
+      "no": "006",
+      "title": "光影 4K 便携投影仪",
+      "subtitle": "自动对焦 · 内置电池",
+      "categoryId": "digital",
+      "categoryName": "数码",
+      "price": 1699,
+      "originPrice": 2199,
+      "sales": 942,
+      "stock": 18,
+      "rating": 4.4,
+      "ratio": 1,
+      "tags": [
+        "新品",
+        "包邮"
+      ],
+      "images": [
+        "img/p006-1.svg",
+        "img/p006-2.svg",
+        "img/p006-3.svg"
+      ],
+      "cover": "img/p006-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "月光银",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "标准版",
+              "delta": 0
+            },
+            {
+              "label": "套装版",
+              "delta": 300
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM006"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "自动对焦 · 内置电池。光影 4K 便携投影仪采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#3b6ef5",
+      "c2": "#7aa2ff"
+    },
+    {
+      "id": "p007",
+      "no": "007",
+      "title": "云朵感宽松圆领卫衣",
+      "subtitle": "380g 重磅棉 · 不起球",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 189,
+      "originPrice": 299,
+      "sales": 12480,
+      "stock": 320,
+      "rating": 4.8,
+      "ratio": 1.3,
+      "tags": [
+        "热卖",
+        "包邮"
+      ],
+      "images": [
+        "img/p007-1.svg",
+        "img/p007-2.svg",
+        "img/p007-3.svg"
+      ],
+      "cover": "img/p007-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "燕麦白",
+              "delta": 0
+            },
+            {
+              "label": "雾霾蓝",
+              "delta": 0
+            },
+            {
+              "label": "炭灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "M",
+              "delta": 0
+            },
+            {
+              "label": "L",
+              "delta": 0
+            },
+            {
+              "label": "XL",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM007"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "380g 重磅棉 · 不起球。云朵感宽松圆领卫衣采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p008",
+      "no": "008",
+      "title": "轻氧感直筒牛仔裤",
+      "subtitle": "高腰显瘦 · 四面弹面料",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 239,
+      "originPrice": 359,
+      "sales": 8930,
+      "stock": 180,
+      "rating": 4.6,
+      "ratio": 1.4,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p008-1.svg",
+        "img/p008-2.svg",
+        "img/p008-3.svg"
+      ],
+      "cover": "img/p008-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "浅蓝",
+              "delta": 0
+            },
+            {
+              "label": "深蓝",
+              "delta": 0
+            },
+            {
+              "label": "黑灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "26",
+              "delta": 0
+            },
+            {
+              "label": "27",
+              "delta": 0
+            },
+            {
+              "label": "28",
+              "delta": 0
+            },
+            {
+              "label": "29",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM008"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "高腰显瘦 · 四面弹面料。轻氧感直筒牛仔裤采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p009",
+      "no": "009",
+      "title": "暖阳 90 白鸭绒羽绒服",
+      "subtitle": "含绒量 90% · 零下十度可穿",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 699,
+      "originPrice": 1099,
+      "sales": 3620,
+      "stock": 95,
+      "rating": 4.7,
+      "ratio": 1.25,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p009-1.svg",
+        "img/p009-2.svg",
+        "img/p009-3.svg"
+      ],
+      "cover": "img/p009-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "曜黑",
+              "delta": 0
+            },
+            {
+              "label": "米杏",
+              "delta": 0
+            },
+            {
+              "label": "松绿",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "M",
+              "delta": 0
+            },
+            {
+              "label": "L",
+              "delta": 0
+            },
+            {
+              "label": "XL",
+              "delta": 0
+            },
+            {
+              "label": "XXL",
+              "delta": 30
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM009"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "含绒量 90% · 零下十度可穿。暖阳 90 白鸭绒羽绒服采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p010",
+      "no": "010",
+      "title": "素麻宽松衬衫",
+      "subtitle": "新疆棉麻 · 透气不贴身",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 159,
+      "originPrice": 239,
+      "sales": 5210,
+      "stock": 210,
+      "rating": 4.5,
+      "ratio": 1.35,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p010-1.svg",
+        "img/p010-2.svg",
+        "img/p010-3.svg"
+      ],
+      "cover": "img/p010-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "本白",
+              "delta": 0
+            },
+            {
+              "label": "浅卡其",
+              "delta": 0
+            },
+            {
+              "label": "雾霾绿",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "S",
+              "delta": 0
+            },
+            {
+              "label": "M",
+              "delta": 0
+            },
+            {
+              "label": "L",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM010"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "新疆棉麻 · 透气不贴身。素麻宽松衬衫采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p011",
+      "no": "011",
+      "title": "踏云软底休闲鞋",
+      "subtitle": "踩屎感鞋垫 · 久走不累",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 279,
+      "originPrice": 429,
+      "sales": 15820,
+      "stock": 260,
+      "rating": 4.8,
+      "ratio": 1,
+      "tags": [
+        "热卖"
+      ],
+      "images": [
+        "img/p011-1.svg",
+        "img/p011-2.svg",
+        "img/p011-3.svg"
+      ],
+      "cover": "img/p011-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "黑白",
+              "delta": 0
+            },
+            {
+              "label": "全黑",
+              "delta": 0
+            },
+            {
+              "label": "米白",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "36",
+              "delta": 0
+            },
+            {
+              "label": "37",
+              "delta": 0
+            },
+            {
+              "label": "38",
+              "delta": 0
+            },
+            {
+              "label": "39",
+              "delta": 0
+            },
+            {
+              "label": "40",
+              "delta": 0
+            },
+            {
+              "label": "41",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM011"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "踩屎感鞋垫 · 久走不累。踏云软底休闲鞋采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p012",
+      "no": "012",
+      "title": "细织羊毛混纺围巾",
+      "subtitle": "亲肤不扎 · 冬日出街单品",
+      "categoryId": "apparel",
+      "categoryName": "服饰",
+      "price": 99,
+      "originPrice": 169,
+      "sales": 7340,
+      "stock": 400,
+      "rating": 4.4,
+      "ratio": 1.1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p012-1.svg",
+        "img/p012-2.svg",
+        "img/p012-3.svg"
+      ],
+      "cover": "img/p012-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "藏青",
+              "delta": 0
+            },
+            {
+              "label": "酒红",
+              "delta": 0
+            },
+            {
+              "label": "浅灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "均码",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM012"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "亲肤不扎 · 冬日出街单品。细织羊毛混纺围巾采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e2568b",
+      "c2": "#ff9ec0"
+    },
+    {
+      "id": "p013",
+      "no": "013",
+      "title": "北欧实木升降电脑桌",
+      "subtitle": "静音电机 · 记忆高度",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 1299,
+      "originPrice": 1899,
+      "sales": 2140,
+      "stock": 36,
+      "rating": 4.7,
+      "ratio": 1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p013-1.svg",
+        "img/p013-2.svg",
+        "img/p013-3.svg"
+      ],
+      "cover": "img/p013-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "原木色",
+              "delta": 0
+            },
+            {
+              "label": "胡桃色",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "1.2m",
+              "delta": 0
+            },
+            {
+              "label": "1.4m",
+              "delta": 200
+            },
+            {
+              "label": "1.6m",
+              "delta": 400
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM013"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "静音电机 · 记忆高度。北欧实木升降电脑桌采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p014",
+      "no": "014",
+      "title": "云眠抗菌四件套",
+      "subtitle": "60 支长绒棉 · 裸睡级触感",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 359,
+      "originPrice": 599,
+      "sales": 9840,
+      "stock": 150,
+      "rating": 4.8,
+      "ratio": 1.2,
+      "tags": [
+        "热卖",
+        "包邮"
+      ],
+      "images": [
+        "img/p014-1.svg",
+        "img/p014-2.svg",
+        "img/p014-3.svg"
+      ],
+      "cover": "img/p014-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "豆沙粉",
+              "delta": 0
+            },
+            {
+              "label": "雾霾蓝",
+              "delta": 0
+            },
+            {
+              "label": "浅灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "1.5m",
+              "delta": 0
+            },
+            {
+              "label": "1.8m",
+              "delta": 40
+            },
+            {
+              "label": "2.0m",
+              "delta": 80
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM014"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "60 支长绒棉 · 裸睡级触感。云眠抗菌四件套采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p015",
+      "no": "015",
+      "title": "静音循环扇 S2",
+      "subtitle": "直流变频 · 最低 18 分贝",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 429,
+      "originPrice": 599,
+      "sales": 4720,
+      "stock": 88,
+      "rating": 4.6,
+      "ratio": 1.25,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p015-1.svg",
+        "img/p015-2.svg",
+        "img/p015-3.svg"
+      ],
+      "cover": "img/p015-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "月白",
+              "delta": 0
+            },
+            {
+              "label": "深灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "落地款",
+              "delta": 0
+            },
+            {
+              "label": "台式",
+              "delta": -80
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM015"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "直流变频 · 最低 18 分贝。静音循环扇 S2采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p016",
+      "no": "016",
+      "title": "拾光香薰加湿器",
+      "subtitle": "300ml · 无雾静音",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 149,
+      "originPrice": 219,
+      "sales": 11230,
+      "stock": 300,
+      "rating": 4.5,
+      "ratio": 1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p016-1.svg",
+        "img/p016-2.svg",
+        "img/p016-3.svg"
+      ],
+      "cover": "img/p016-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "奶白",
+              "delta": 0
+            },
+            {
+              "label": "藕粉",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "基础款",
+              "delta": 0
+            },
+            {
+              "label": "夜灯款",
+              "delta": 50
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM016"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "300ml · 无雾静音。拾光香薰加湿器采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p017",
+      "no": "017",
+      "title": "收纳方格布艺凳",
+      "subtitle": "可折叠 · 承重 120kg",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 89,
+      "originPrice": 139,
+      "sales": 6210,
+      "stock": 420,
+      "rating": 4.3,
+      "ratio": 0.95,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p017-1.svg",
+        "img/p017-2.svg",
+        "img/p017-3.svg"
+      ],
+      "cover": "img/p017-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "米白",
+              "delta": 0
+            },
+            {
+              "label": "灰蓝",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "单只",
+              "delta": 0
+            },
+            {
+              "label": "两只装",
+              "delta": 70
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM017"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "可折叠 · 承重 120kg。收纳方格布艺凳采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p018",
+      "no": "018",
+      "title": "暖光落地氛围灯",
+      "subtitle": "三档色温 · 无极调光",
+      "categoryId": "home",
+      "categoryName": "家居",
+      "price": 259,
+      "originPrice": 389,
+      "sales": 3380,
+      "stock": 120,
+      "rating": 4.6,
+      "ratio": 1.35,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p018-1.svg",
+        "img/p018-2.svg",
+        "img/p018-3.svg"
+      ],
+      "cover": "img/p018-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "香槟金",
+              "delta": 0
+            },
+            {
+              "label": "哑黑",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "标准版",
+              "delta": 0
+            },
+            {
+              "label": "遥控版",
+              "delta": 60
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM018"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "三档色温 · 无极调光。暖光落地氛围灯采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#2f9e7e",
+      "c2": "#7fd6b8"
+    },
+    {
+      "id": "p019",
+      "no": "019",
+      "title": "明前龙井 特级礼盒",
+      "subtitle": "手工采摘 · 豆香浓郁",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 288,
+      "originPrice": 468,
+      "sales": 5610,
+      "stock": 200,
+      "rating": 4.8,
+      "ratio": 1.1,
+      "tags": [
+        "热卖",
+        "包邮"
+      ],
+      "images": [
+        "img/p019-1.svg",
+        "img/p019-2.svg",
+        "img/p019-3.svg"
+      ],
+      "cover": "img/p019-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "明前特级",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "100g",
+              "delta": 0
+            },
+            {
+              "label": "250g",
+              "delta": 320
+            },
+            {
+              "label": "500g",
+              "delta": 760
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM019"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "手工采摘 · 豆香浓郁。明前龙井 特级礼盒采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p020",
+      "no": "020",
+      "title": "云南小粒咖啡挂耳",
+      "subtitle": "中深烘 · 10 片独立装",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 69,
+      "originPrice": 99,
+      "sales": 18420,
+      "stock": 800,
+      "rating": 4.7,
+      "ratio": 1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p020-1.svg",
+        "img/p020-2.svg",
+        "img/p020-3.svg"
+      ],
+      "cover": "img/p020-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "经典拼配",
+              "delta": 0
+            },
+            {
+              "label": "果香日晒",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "10 片",
+              "delta": 0
+            },
+            {
+              "label": "30 片",
+              "delta": 120
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM020"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "中深烘 · 10 片独立装。云南小粒咖啡挂耳采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p021",
+      "no": "021",
+      "title": "古法手工红糖姜茶",
+      "subtitle": "独立小袋 · 经期常备",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 49,
+      "originPrice": 79,
+      "sales": 23150,
+      "stock": 1000,
+      "rating": 4.5,
+      "ratio": 1.2,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p021-1.svg",
+        "img/p021-2.svg",
+        "img/p021-3.svg"
+      ],
+      "cover": "img/p021-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "原味",
+              "delta": 0
+            },
+            {
+              "label": "玫瑰味",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "15 袋",
+              "delta": 0
+            },
+            {
+              "label": "30 袋",
+              "delta": 40
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM021"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "独立小袋 · 经期常备。古法手工红糖姜茶采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p022",
+      "no": "022",
+      "title": "海盐黑巧坚果礼盒",
+      "subtitle": "六种坚果 · 低糖配方",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 119,
+      "originPrice": 179,
+      "sales": 8720,
+      "stock": 350,
+      "rating": 4.6,
+      "ratio": 0.95,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p022-1.svg",
+        "img/p022-2.svg",
+        "img/p022-3.svg"
+      ],
+      "cover": "img/p022-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "混合装",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "500g",
+              "delta": 0
+            },
+            {
+              "label": "1000g",
+              "delta": 90
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM022"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "六种坚果 · 低糖配方。海盐黑巧坚果礼盒采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p023",
+      "no": "023",
+      "title": "当日现摘阳光玫瑰",
+      "subtitle": "云南建水 · 甜度 18 度",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 88,
+      "originPrice": 138,
+      "sales": 6940,
+      "stock": 160,
+      "rating": 4.4,
+      "ratio": 1.15,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p023-1.svg",
+        "img/p023-2.svg",
+        "img/p023-3.svg"
+      ],
+      "cover": "img/p023-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "精品果",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "2 斤",
+              "delta": 0
+            },
+            {
+              "label": "5 斤",
+              "delta": 150
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM023"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "云南建水 · 甜度 18 度。当日现摘阳光玫瑰采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p024",
+      "no": "024",
+      "title": "低脂即食鸡胸肉",
+      "subtitle": "开袋即食 · 高蛋白",
+      "categoryId": "food",
+      "categoryName": "食品",
+      "price": 59,
+      "originPrice": 89,
+      "sales": 31200,
+      "stock": 1200,
+      "rating": 4.5,
+      "ratio": 1,
+      "tags": [
+        "热卖",
+        "包邮"
+      ],
+      "images": [
+        "img/p024-1.svg",
+        "img/p024-2.svg",
+        "img/p024-3.svg"
+      ],
+      "cover": "img/p024-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "黑胡椒",
+              "delta": 0
+            },
+            {
+              "label": "奥尔良",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "8 包",
+              "delta": 0
+            },
+            {
+              "label": "20 包",
+              "delta": 80
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM024"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "开袋即食 · 高蛋白。低脂即食鸡胸肉采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#e08a2b",
+      "c2": "#ffc178"
+    },
+    {
+      "id": "p025",
+      "no": "025",
+      "title": "水感保湿精华水",
+      "subtitle": "5% 烟酰胺 · 敏感肌可用",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 179,
+      "originPrice": 289,
+      "sales": 14280,
+      "stock": 260,
+      "rating": 4.8,
+      "ratio": 1.25,
+      "tags": [
+        "热卖"
+      ],
+      "images": [
+        "img/p025-1.svg",
+        "img/p025-2.svg",
+        "img/p025-3.svg"
+      ],
+      "cover": "img/p025-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "清爽型",
+              "delta": 0
+            },
+            {
+              "label": "滋润型",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "120ml",
+              "delta": 0
+            },
+            {
+              "label": "200ml",
+              "delta": 90
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM025"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "5% 烟酰胺 · 敏感肌可用。水感保湿精华水采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p026",
+      "no": "026",
+      "title": "素颜防晒乳 SPF50+",
+      "subtitle": "不泛白 · 成膜快",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 129,
+      "originPrice": 189,
+      "sales": 26540,
+      "stock": 500,
+      "rating": 4.7,
+      "ratio": 1.1,
+      "tags": [
+        "包邮",
+        "热卖"
+      ],
+      "images": [
+        "img/p026-1.svg",
+        "img/p026-2.svg",
+        "img/p026-3.svg"
+      ],
+      "cover": "img/p026-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "自然色",
+              "delta": 0
+            },
+            {
+              "label": "透明色",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "30ml",
+              "delta": 0
+            },
+            {
+              "label": "50ml",
+              "delta": 60
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM026"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "不泛白 · 成膜快。素颜防晒乳 SPF50+采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p027",
+      "no": "027",
+      "title": "丝绒雾面口红礼盒",
+      "subtitle": "三支装 · 显白不挑皮",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 199,
+      "originPrice": 329,
+      "sales": 9130,
+      "stock": 180,
+      "rating": 4.6,
+      "ratio": 1,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p027-1.svg",
+        "img/p027-2.svg",
+        "img/p027-3.svg"
+      ],
+      "cover": "img/p027-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "豆沙",
+              "delta": 0
+            },
+            {
+              "label": "正红",
+              "delta": 0
+            },
+            {
+              "label": "蜜桃",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "单支",
+              "delta": 0
+            },
+            {
+              "label": "三支装",
+              "delta": 260
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM027"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "三支装 · 显白不挑皮。丝绒雾面口红礼盒采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p028",
+      "no": "028",
+      "title": "氨基酸温和洁面",
+      "subtitle": "弱酸性 · 洗后不紧绷",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 89,
+      "originPrice": 139,
+      "sales": 18750,
+      "stock": 640,
+      "rating": 4.7,
+      "ratio": 1.2,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p028-1.svg",
+        "img/p028-2.svg",
+        "img/p028-3.svg"
+      ],
+      "cover": "img/p028-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "补水型",
+              "delta": 0
+            },
+            {
+              "label": "控油型",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "100g",
+              "delta": 0
+            },
+            {
+              "label": "150g",
+              "delta": 40
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM028"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "弱酸性 · 洗后不紧绷。氨基酸温和洁面采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p029",
+      "no": "029",
+      "title": "头皮护理洗发水",
+      "subtitle": "无硅油 · 蓬松控油",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 109,
+      "originPrice": 169,
+      "sales": 12460,
+      "stock": 380,
+      "rating": 4.5,
+      "ratio": 1.3,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p029-1.svg",
+        "img/p029-2.svg",
+        "img/p029-3.svg"
+      ],
+      "cover": "img/p029-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "清爽控油",
+              "delta": 0
+            },
+            {
+              "label": "柔顺修护",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "400ml",
+              "delta": 0
+            },
+            {
+              "label": "750ml",
+              "delta": 70
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM029"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "无硅油 · 蓬松控油。头皮护理洗发水采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p030",
+      "no": "030",
+      "title": "夜间修护面霜",
+      "subtitle": "神经酰胺 · 屏障修护",
+      "categoryId": "beauty",
+      "categoryName": "美妆",
+      "price": 259,
+      "originPrice": 399,
+      "sales": 5820,
+      "stock": 140,
+      "rating": 4.8,
+      "ratio": 1.05,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p030-1.svg",
+        "img/p030-2.svg",
+        "img/p030-3.svg"
+      ],
+      "cover": "img/p030-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "轻盈版",
+              "delta": 0
+            },
+            {
+              "label": "滋润版",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "30g",
+              "delta": 0
+            },
+            {
+              "label": "50g",
+              "delta": 160
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM030"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "神经酰胺 · 屏障修护。夜间修护面霜采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#9a4bd8",
+      "c2": "#d5a6f5"
+    },
+    {
+      "id": "p031",
+      "no": "031",
+      "title": "轻弹减震跑鞋 A3",
+      "subtitle": "回弹中底 · 一双通勤跑两用",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 429,
+      "originPrice": 659,
+      "sales": 7410,
+      "stock": 210,
+      "rating": 4.8,
+      "ratio": 1,
+      "tags": [
+        "热卖",
+        "包邮"
+      ],
+      "images": [
+        "img/p031-1.svg",
+        "img/p031-2.svg",
+        "img/p031-3.svg"
+      ],
+      "cover": "img/p031-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "黑白",
+              "delta": 0
+            },
+            {
+              "label": "荧光绿",
+              "delta": 0
+            },
+            {
+              "label": "藏青",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "38",
+              "delta": 0
+            },
+            {
+              "label": "39",
+              "delta": 0
+            },
+            {
+              "label": "40",
+              "delta": 0
+            },
+            {
+              "label": "41",
+              "delta": 0
+            },
+            {
+              "label": "42",
+              "delta": 0
+            },
+            {
+              "label": "43",
+              "delta": 0
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM031"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "回弹中底 · 一双通勤跑两用。轻弹减震跑鞋 A3采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    },
+    {
+      "id": "p032",
+      "no": "032",
+      "title": "专业瑜伽垫 8mm",
+      "subtitle": "防滑双面 · 送绑带",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 139,
+      "originPrice": 219,
+      "sales": 15230,
+      "stock": 400,
+      "rating": 4.7,
+      "ratio": 1.1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p032-1.svg",
+        "img/p032-2.svg",
+        "img/p032-3.svg"
+      ],
+      "cover": "img/p032-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "雾霾紫",
+              "delta": 0
+            },
+            {
+              "label": "高级灰",
+              "delta": 0
+            },
+            {
+              "label": "墨绿",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "6mm",
+              "delta": 0
+            },
+            {
+              "label": "8mm",
+              "delta": 30
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM032"
+        },
+        {
+          "k": "发货地",
+          "v": "成都"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "防滑双面 · 送绑带。专业瑜伽垫 8mm采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    },
+    {
+      "id": "p033",
+      "no": "033",
+      "title": "智能跳绳 T2",
+      "subtitle": "自动计数 · 蓝牙同步",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 99,
+      "originPrice": 159,
+      "sales": 9840,
+      "stock": 520,
+      "rating": 4.5,
+      "ratio": 1.2,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p033-1.svg",
+        "img/p033-2.svg",
+        "img/p033-3.svg"
+      ],
+      "cover": "img/p033-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "曜石黑",
+              "delta": 0
+            },
+            {
+              "label": "樱花粉",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "标准版",
+              "delta": 0
+            },
+            {
+              "label": "APP 版",
+              "delta": 40
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM033"
+        },
+        {
+          "k": "发货地",
+          "v": "苏州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "自动计数 · 蓝牙同步。智能跳绳 T2采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    },
+    {
+      "id": "p034",
+      "no": "034",
+      "title": "速干短袖训练服",
+      "subtitle": "冰丝面料 · 出汗不粘身",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 89,
+      "originPrice": 139,
+      "sales": 21470,
+      "stock": 780,
+      "rating": 4.6,
+      "ratio": 1.3,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p034-1.svg",
+        "img/p034-2.svg",
+        "img/p034-3.svg"
+      ],
+      "cover": "img/p034-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "黑",
+              "delta": 0
+            },
+            {
+              "label": "白",
+              "delta": 0
+            },
+            {
+              "label": "灰蓝",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "M",
+              "delta": 0
+            },
+            {
+              "label": "L",
+              "delta": 0
+            },
+            {
+              "label": "XL",
+              "delta": 0
+            },
+            {
+              "label": "XXL",
+              "delta": 20
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM034"
+        },
+        {
+          "k": "发货地",
+          "v": "武汉"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "冰丝面料 · 出汗不粘身。速干短袖训练服采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    },
+    {
+      "id": "p035",
+      "no": "035",
+      "title": "折叠健身哑铃",
+      "subtitle": "一对装 · 可拆卸配重",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 199,
+      "originPrice": 329,
+      "sales": 4260,
+      "stock": 160,
+      "rating": 4.4,
+      "ratio": 1,
+      "tags": [
+        "包邮"
+      ],
+      "images": [
+        "img/p035-1.svg",
+        "img/p035-2.svg",
+        "img/p035-3.svg"
+      ],
+      "cover": "img/p035-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "哑光黑",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "5kg",
+              "delta": 0
+            },
+            {
+              "label": "10kg",
+              "delta": 120
+            },
+            {
+              "label": "15kg",
+              "delta": 240
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM035"
+        },
+        {
+          "k": "发货地",
+          "v": "杭州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "一对装 · 可拆卸配重。折叠健身哑铃采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    },
+    {
+      "id": "p036",
+      "no": "036",
+      "title": "户外露营折叠椅",
+      "subtitle": "承重 150kg · 一秒收纳",
+      "categoryId": "sport",
+      "categoryName": "运动",
+      "price": 169,
+      "originPrice": 259,
+      "sales": 6180,
+      "stock": 240,
+      "rating": 4.6,
+      "ratio": 1.15,
+      "tags": [
+        "新品"
+      ],
+      "images": [
+        "img/p036-1.svg",
+        "img/p036-2.svg",
+        "img/p036-3.svg"
+      ],
+      "cover": "img/p036-1.svg",
+      "specs": [
+        {
+          "name": "颜色",
+          "values": [
+            {
+              "label": "卡其",
+              "delta": 0
+            },
+            {
+              "label": "墨绿",
+              "delta": 0
+            },
+            {
+              "label": "深灰",
+              "delta": 0
+            }
+          ]
+        },
+        {
+          "name": "规格",
+          "values": [
+            {
+              "label": "标准款",
+              "delta": 0
+            },
+            {
+              "label": "加宽款",
+              "delta": 60
+            }
+          ]
+        }
+      ],
+      "params": [
+        {
+          "k": "商品编号",
+          "v": "MM036"
+        },
+        {
+          "k": "发货地",
+          "v": "广州"
+        },
+        {
+          "k": "服务",
+          "v": "7 天无理由 · 运费险"
+        }
+      ],
+      "desc": "承重 150kg · 一秒收纳。户外露营折叠椅采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "c1": "#d94f3d",
+      "c2": "#ff9877"
+    }
+  ]
+}

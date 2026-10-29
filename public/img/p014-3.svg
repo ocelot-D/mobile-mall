@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="720" viewBox="0 0 600 720">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#2f9e7e"/><stop offset="1" stop-color="#7fd6b8"/>
+</linearGradient></defs>
+<rect width="600" height="720" fill="url(#g)"/>
+<rect x="48" y="86.39999999999999" width="180" height="216" rx="20" fill="#fff" opacity=".12"/>
+     <rect x="270" y="158.4" width="204.00000000000003" height="244.8" rx="20" fill="#fff" opacity=".16"/>
+     <circle cx="132" cy="561.6" r="96" fill="#fff" opacity=".13"/>
+<g font-family="-apple-system,PingFang SC,Microsoft YaHei,sans-serif" fill="#fff">
+<text x="36" y="642" font-size="34" font-weight="700" opacity=".95">家居</text>
+<text x="36" y="686" font-size="26" opacity=".8">NO.014 · 3/3</text>
+</g>
+<text x="564" y="84" text-anchor="end" font-size="150" font-weight="800" fill="#fff" opacity=".16" font-family="Helvetica,Arial">014</text>
+</svg>
