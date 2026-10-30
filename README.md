@@ -168,7 +168,7 @@ npm run serve    # 打开 http://localhost:3002/
 | 允许装的包 | `vue` / `vite` / `@vitejs/plugin-vue` / `vue-router` / `pinia` | 其余一律不装 |
 | 图片 | 真实商品图，经后端 `/api/img` 实时代理；**本机不存图** | 图永远是源站最新的；代理层做了域名白名单（防 SSRF）|
 | `.bat` | 纯 ASCII | cmd 读中文会乱码 |
-| 注释 | 全量中文，写"为什么" | 方便自己回看，也方便别人接手 |
+| 注释 | 代码里不留注释，靠命名和结构自解释 | 需要说明的都写在 README 和 `运行步骤.txt` 里 |
 
 ### 为什么装 vue-router 和 pinia
 

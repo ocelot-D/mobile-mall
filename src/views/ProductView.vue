@@ -1,6 +1,6 @@
 <template>
   <div class="page product-page">
-    <!-- 顶部悬浮按钮：返回 + 购物车。浮在图片上，所以要自己处理安全区 -->
+
     <div class="float-top">
       <button class="round-btn tap tap-44" @click="back">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
@@ -17,14 +17,12 @@
       </button>
     </div>
 
-    <!-- 加载中 -->
     <div v-if="loading" class="loading-block">
       <div class="skeleton skeleton-hero"></div>
       <div class="skeleton skeleton-text"></div>
       <div class="skeleton skeleton-text short"></div>
     </div>
 
-    <!-- 加载失败 -->
     <div v-else-if="error" class="state-block">
       <div class="state-icon">📶</div>
       <p class="state-title">商品加载失败</p>
@@ -32,9 +30,8 @@
       <button class="retry tap tap-44" @click="load">重新加载</button>
     </div>
 
-    <!-- 正常内容 -->
     <template v-else-if="product">
-      <!-- 图片轮播：复用首页那个组件，把商品图数组映射成它要的格式 -->
+
       <BannerSwiper
         v-if="product.images?.length"
         :list="product.images.map((src, i) => ({ id: `${product.id}-${i}`, img: src }))"
@@ -42,7 +39,6 @@
         class="hero-swiper"
       />
 
-      <!-- 价格区 -->
       <section class="price-box">
         <div class="price-row">
           <span class="price"><span class="symbol">¥</span>{{ currentPrice }}</span>
@@ -58,7 +54,6 @@
         </div>
       </section>
 
-      <!-- 规格选择 -->
       <section class="spec-box">
         <div v-for="(group, gi) in product.specs" :key="group.name" class="spec-group">
           <h3 class="spec-title">{{ group.name }}</h3>
@@ -71,7 +66,7 @@
               @click="selectSpec(gi, v)"
             >
               {{ v.label }}
-              <!-- 加价直接在按钮上标出来，用户不用猜 -->
+
               <em v-if="v.delta" class="delta">+{{ v.delta }}</em>
             </button>
           </div>
@@ -87,7 +82,6 @@
         </div>
       </section>
 
-      <!-- 参数 -->
       <section class="param-box">
         <h3 class="spec-title">商品参数</h3>
         <div v-for="p in product.params" :key="p.k" class="param-row">
@@ -96,7 +90,6 @@
         </div>
       </section>
 
-      <!-- 详情描述 -->
       <section class="desc-box">
         <h3 class="spec-title">商品详情</h3>
         <p class="desc">{{ product.desc }}</p>
@@ -112,15 +105,9 @@
         </div>
       </section>
 
-      <!-- 底部留白，避免被操作栏挡住 -->
       <div class="bottom-space"></div>
     </template>
 
-    <!--
-      底部操作栏。
-      padding-bottom 加安全区：不加的话 iPhone 上"加入购物车"按钮
-      会正好压在底部横条下面，点一次要费半天劲。
-    -->
     <div v-if="product" class="action-bar">
       <button class="icon-col tap" @click="router.push('/cart')">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none"
@@ -137,19 +124,6 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 商品详情页
-//
-// 验收点（规划里 D20 那条）：
-//   ✅ 规格切换，价格跟着变
-//   ✅ 加入购物车，Tab 角标数量跟着涨
-//   ✅ 底部操作栏避开 iPhone 底部横条
-//
-// 价格怎么算：
-//   最终价 = 商品基础价 + 各规格的加价（delta）之和。
-//   加价存在商品数据的 specs[].values[].delta 里（可能是负数，比如台式款更便宜）。
-//   这个 delta 也会一起存进购物车，下单时后端会用它重算一遍单价。
-// ============================================================================
 
 import { ref, computed, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -169,11 +143,9 @@ const product = ref(null)
 const loading = ref(true)
 const error = ref('')
 
-// 每一组规格选中的是第几项（用 label 存，方便展示"曜石黑 / 256G"）
 const selected = ref([])
 const count = ref(1)
 
-/** 当前选中的规格加价之和 */
 const specDelta = computed(() => {
   if (!product.value) return 0
   return product.value.specs.reduce((sum, group, gi) => {
@@ -183,13 +155,11 @@ const specDelta = computed(() => {
   }, 0)
 })
 
-/** 规格切换后价格要跟着变 */
 const currentPrice = computed(() => {
   if (!product.value) return 0
   return Math.round((product.value.price + specDelta.value) * 100) / 100
 })
 
-/** 规格文字，如 "曜石黑 / 降噪版" */
 const specText = computed(() => selected.value.filter(Boolean).join(' / '))
 
 function selectSpec(gi, v) {
@@ -202,7 +172,7 @@ async function load() {
   try {
     const data = await getProduct(route.params.id)
     product.value = data
-    // 默认选中每组第一项，避免进来时"什么都没选"的尴尬状态
+
     selected.value = data.specs.map((g) => g.values[0].label)
     count.value = 1
   } catch (e) {
@@ -220,13 +190,13 @@ function addToCart() {
 
 function buyNow() {
   if (!product.value) return
-  // 立即购买 = 先加进购物车并勾选，再跳结算页
+
   cart.add(product.value, { text: specText.value, delta: specDelta.value }, count.value)
   router.push('/order')
 }
 
 function back() {
-  // 有历史就后退，没有（比如直接粘链接进来的）就回首页
+
   if (window.history.length > 1) router.back()
   else router.push('/')
 }
@@ -240,7 +210,6 @@ onMounted(load)
   padding-bottom: calc(0.56rem + var(--safe-bottom));
 }
 
-/* ─── 顶部悬浮按钮 ───────────────────────────────────────────────────────── */
 .float-top {
   position: fixed;
   top: calc(0.1rem + var(--safe-top));
@@ -290,15 +259,13 @@ onMounted(load)
   text-align: center;
 }
 
-/* ─── 轮播 ───────────────────────────────────────────────────────────────── */
 .hero-swiper {
   margin: 0;
   border-radius: 0;
-  /* 详情页大图比例更方一点，跟列表页的卡片区分开 */
+
   aspect-ratio: 1 / 1;
 }
 
-/* ─── 信息区 ─────────────────────────────────────────────────────────────── */
 .price-box {
   padding: 0.14rem 0.14rem 0.12rem;
   background: var(--card);
@@ -358,7 +325,6 @@ onMounted(load)
   color: var(--ink-3);
 }
 
-/* ─── 规格 ───────────────────────────────────────────────────────────────── */
 .spec-box,
 .param-box,
 .desc-box {
@@ -384,7 +350,7 @@ onMounted(load)
 }
 
 .spec-btn {
-  /* 最小 44px 高：规格按钮是最容易点错的地方，热区必须够大 */
+
   min-height: 0.32rem;
   padding: 0 0.14rem;
   border-radius: 0.06rem;
@@ -428,7 +394,6 @@ onMounted(load)
   color: var(--ink);
 }
 
-/* 到边界时按钮置灰，明确告诉用户"不能更少/更多了" */
 .step:disabled {
   color: var(--ink-3);
   opacity: 0.5;
@@ -441,7 +406,6 @@ onMounted(load)
   font-variant-numeric: tabular-nums;
 }
 
-/* ─── 参数 / 详情 ────────────────────────────────────────────────────────── */
 .param-row {
   display: flex;
   padding: 0.07rem 0;
@@ -476,7 +440,6 @@ onMounted(load)
   height: 0.1rem;
 }
 
-/* ─── 底部操作栏 ─────────────────────────────────────────────────────────── */
 .action-bar {
   position: fixed;
   left: 0;
@@ -487,7 +450,7 @@ onMounted(load)
   align-items: center;
   gap: 0.08rem;
   padding: 0.08rem 0.12rem;
-  /* 安全区：这一行保证按钮不被 iPhone 底部横条压住 */
+
   padding-bottom: calc(0.08rem + var(--safe-bottom));
   background: rgba(255, 255, 255, 0.96);
   border-top: 1px solid var(--line);
@@ -532,7 +495,6 @@ onMounted(load)
   background: linear-gradient(90deg, var(--brand), var(--brand-dark));
 }
 
-/* ─── 加载 / 错误 ────────────────────────────────────────────────────────── */
 .loading-block {
   padding: 0.14rem;
 }

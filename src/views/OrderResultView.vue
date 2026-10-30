@@ -1,11 +1,10 @@
 <template>
   <div class="page result-page">
-    <!-- 加载中 -->
+
     <div v-if="loading" class="state">
       <p>正在查询订单…</p>
     </div>
 
-    <!-- 查不到 -->
     <div v-else-if="error" class="state">
       <div class="icon">🧾</div>
       <p class="title">订单查询失败</p>
@@ -13,7 +12,6 @@
       <button class="btn tap tap-44" @click="load">重试</button>
     </div>
 
-    <!-- 成功 -->
     <template v-else-if="order">
       <div class="success">
         <div class="tick">✓</div>
@@ -56,13 +54,6 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 下单成功页
-//
-// 为什么用订单号去后端查，而不是把订单对象直接通过路由传过来？
-//   路由 state 传对象一刷新就没了，用户"刷新确认页"是很常见的动作。
-//   用订单号查询，刷新、分享链接都能正常显示，这才是正确做法。
-// ============================================================================
 
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
@@ -129,7 +120,6 @@ onMounted(load)
   line-height: 0.4rem;
 }
 
-/* ─── 成功头部 ───────────────────────────────────────────────────────────── */
 .success {
   padding: 0.4rem 0.2rem 0.3rem;
   text-align: center;
@@ -158,7 +148,6 @@ onMounted(load)
   color: var(--ink-3);
 }
 
-/* ─── 信息块 ─────────────────────────────────────────────────────────────── */
 .card-block {
   margin: 0.1rem;
   padding: 0.14rem;
@@ -247,7 +236,6 @@ onMounted(load)
   font-size: 0.17rem;
 }
 
-/* ─── 底部按钮 ───────────────────────────────────────────────────────────── */
 .actions {
   display: flex;
   gap: 0.1rem;

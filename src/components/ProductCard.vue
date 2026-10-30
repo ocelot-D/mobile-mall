@@ -1,9 +1,6 @@
 <template>
   <div class="card-wrap tap" @click="go">
-    <!--
-      图片区：ratio 是商品数据里的高宽比。
-      把它传给 LazyImg，图片没加载完坑位就占好了 —— 这是 CLS（布局抖动）为 0 的关键。
-    -->
+
     <LazyImg
       :src="imgSrc(product.cover)"
       :ratio="product.ratio"
@@ -13,7 +10,6 @@
       class="card-img"
     />
 
-    <!-- 左上角标签：包邮、新品这类 -->
     <span v-if="product.tags && product.tags[0]" class="tag">{{ product.tags[0] }}</span>
 
     <div class="card-body">
@@ -36,9 +32,6 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 商品卡片（瀑布流里的每一格）
-// ============================================================================
 
 import { useRouter } from 'vue-router'
 import LazyImg from './LazyImg.vue'
@@ -50,8 +43,6 @@ const props = defineProps({
 
 const router = useRouter()
 
-// 图片路径前缀。开发环境 Vite 直接托管 public/，生产环境由 Node 后端托管，
-// 两边都是根路径下的 img/，所以直接用相对路径 '/' 开头即可。
 const base = '/'
 
 function go() {
@@ -92,7 +83,7 @@ function go() {
   font-weight: 500;
   line-height: 1.35;
   color: var(--ink);
-  /* 固定两行高度：标题长短不一也不会让卡片高度参差不齐 */
+
   min-height: 0.35rem;
 }
 
@@ -112,8 +103,7 @@ function go() {
 .price {
   color: var(--brand);
   font-weight: 700;
-  /* clamp 流式字号：小屏不小于 15px，大屏不超过 19px，中间随屏幕宽线性变化。
-     配合 rem 基准双保险，任何机型下价格这个最重要的信息都清晰可读 */
+
   font-size: clamp(15px, 4.2vw, 19px);
   font-variant-numeric: tabular-nums;
 }

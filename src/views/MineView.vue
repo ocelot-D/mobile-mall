@@ -1,6 +1,6 @@
 <template>
   <div class="page mine-page has-tabbar">
-    <!-- 用户头部：头像 + 昵称 + 手机号（脱敏） + 会员标 -->
+
     <header class="hero">
       <div class="avatar">李</div>
       <div class="user">
@@ -10,7 +10,6 @@
       <button class="setting tap" aria-label="设置" @click="onStub">⚙</button>
     </header>
 
-    <!-- 资产栏：优惠券 / 积分 / 余额 / 收藏，仿真数据 -->
     <section class="card-block assets">
       <button v-for="a in ASSETS" :key="a.label" class="asset tap" @click="onStub">
         <span class="asset-num">{{ a.num }}</span>
@@ -18,7 +17,6 @@
       </button>
     </section>
 
-    <!-- 订单入口：右上角的红色角标是真实电商的标配（有新状态就提示你去看） -->
     <section class="card-block">
       <div class="row-head">
         <h2 class="block-title">我的订单</h2>
@@ -28,7 +26,7 @@
         <button v-for="o in ORDER_ENTRIES" :key="o.label" class="order-entry tap" @click="onStub">
           <span class="order-icon">
             {{ o.icon }}
-            <!-- 有待处理数量才显示角标，没有不显示 -->
+
             <i v-if="o.badge" class="badge">{{ o.badge }}</i>
           </span>
           <span class="order-label">{{ o.label }}</span>
@@ -36,7 +34,6 @@
       </div>
     </section>
 
-    <!-- 常用功能菜单：箭头行，主流电商个人中心的标准形态 -->
     <section class="card-block menu">
       <button v-for="m in MENU" :key="m.label" class="menu-row tap tap-44" @click="onStub">
         <span class="menu-icon">{{ m.icon }}</span>
@@ -46,22 +43,18 @@
       </button>
     </section>
 
-    <!-- 「安装到主屏幕」：H5 秒变"类 App"体验的入口，真机演示就点这里 -->
     <section class="card-block pwa-block">
       <h2 class="block-title">装到手机桌面</h2>
 
-      <!-- 已经装好了：告诉用户当前就是全屏 App 模式 -->
       <template v-if="pwa.isStandalone.value">
         <p class="pwa-tip pwa-ok">✓ 已从桌面图标打开，当前是全屏 App 模式（无地址栏）</p>
       </template>
 
-      <!-- 能弹系统安装框（安卓 Chrome 常见）：直接给按钮 -->
       <template v-else-if="pwa.canInstall.value">
         <p class="pwa-tip">安装后从桌面图标打开，全屏显示、没有地址栏，和原生 App 一样。</p>
         <button class="install-btn tap tap-44" @click="onInstall">安装到桌面</button>
       </template>
 
-      <!-- 弹不了系统框：给手动添加的操作指引 -->
       <template v-else>
         <p class="pwa-tip" v-if="pwa.isIOS.value">
           iPhone 上：点浏览器底部的「分享」按钮 <span class="kbd">⬆︎</span> → 往下滑找到
@@ -78,25 +71,16 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 我的（用户中心）
-//
-// 页面形态照着主流电商 App 的个人中心做：头部用户卡 → 资产栏 → 订单 → 菜单。
-// 演示项目没有登录态和订单模块，所有入口点击统一走 onStub 提示，
-// 数据写死但结构真实（角标、脱敏手机号这些细节都在）。
-// ============================================================================
 
 import { useCartStore } from '../stores/cart'
 import { toast, toastOk } from '../composables/useToast'
-// PWA 安装状态与触发函数（本页"装到手机桌面"卡片用）
+
 import { canInstall, isStandalone, isIOS, promptInstall } from '../composables/usePwaInstall'
 
-// 模板里用 pwa.xxx 引用，避免变量名打架
 const pwa = { canInstall, isStandalone, isIOS }
 
 const cart = useCartStore()
 
-// 资产栏：数字和标签写死，仿真展示
 const ASSETS = [
   { num: '3', label: '优惠券' },
   { num: '1280', label: '积分' },
@@ -104,7 +88,6 @@ const ASSETS = [
   { num: '12', label: '收藏' },
 ]
 
-// 订单四入口，badge 是待处理数量（用来显示红色角标）
 const ORDER_ENTRIES = [
   { icon: '💰', label: '待付款', badge: 1 },
   { icon: '📦', label: '待发货', badge: 2 },
@@ -112,7 +95,6 @@ const ORDER_ENTRIES = [
   { icon: '↩️', label: '退款/售后', badge: 0 },
 ]
 
-// 常用功能菜单，extra 是右侧灰字（仿真实 App 的信息前置）
 const MENU = [
   { icon: '📍', label: '收货地址', extra: '' },
   { icon: '🎫', label: '领券中心', extra: '3 张可用' },
@@ -133,9 +115,6 @@ function onStub() {
   toast('这是演示项目，该模块未接入', 'warn')
 }
 
-// ---------------------------------------------------------------------------
-// 安装到桌面：触发系统安装弹窗
-// ---------------------------------------------------------------------------
 async function onInstall() {
   const result = await promptInstall()
   if (result === 'accepted') {
@@ -143,7 +122,7 @@ async function onInstall() {
   } else if (result === 'dismissed') {
     toast('已取消，随时可以再装', 'warn')
   } else {
-    // 弹不了系统框（浏览器没发安装事件），退回手动指引
+
     toast('请用浏览器菜单里的「添加到主屏幕」', 'warn')
   }
 }
@@ -154,7 +133,6 @@ async function onInstall() {
   background: var(--bg);
 }
 
-/* ─── 用户头部 ───────────────────────────────────────────────────────────── */
 .hero {
   display: flex;
   align-items: center;
@@ -186,7 +164,6 @@ async function onInstall() {
   font-weight: 600;
 }
 
-/* 会员标：小黄牌，仿真电商都有 */
 .vip {
   display: inline-block;
   margin-left: 0.06rem;
@@ -205,7 +182,6 @@ async function onInstall() {
   opacity: 0.85;
 }
 
-/* 右上角设置按钮，44px 点击区 */
 .setting {
   width: var(--tap);
   height: var(--tap);
@@ -213,7 +189,6 @@ async function onInstall() {
   font-size: 0.18rem;
 }
 
-/* ─── 资产栏 ─────────────────────────────────────────────────────────────── */
 .assets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -241,7 +216,6 @@ async function onInstall() {
   color: var(--ink-3);
 }
 
-/* ─── 通用块 ─────────────────────────────────────────────────────────────── */
 .card-block {
   margin: 0.1rem;
   padding: 0.14rem;
@@ -260,13 +234,11 @@ async function onInstall() {
   justify-content: space-between;
 }
 
-/* "全部订单"：右侧灰字链接 */
 .all-orders {
   font-size: 0.12rem;
   color: var(--ink-3);
 }
 
-/* ─── 订单入口 ───────────────────────────────────────────────────────────── */
 .orders {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -288,7 +260,6 @@ async function onInstall() {
   line-height: 1;
 }
 
-/* 红色角标：待处理数量，超过 9 显示 9+（真实 App 的通用做法） */
 .badge {
   position: absolute;
   top: -0.05rem;
@@ -311,7 +282,6 @@ async function onInstall() {
   color: var(--ink-2);
 }
 
-/* ─── 菜单列表 ───────────────────────────────────────────────────────────── */
 .menu {
   padding: 0 0.14rem;
 }
@@ -328,7 +298,6 @@ async function onInstall() {
   text-align: left;
 }
 
-/* 最后一行不要分隔线，不然和卡片圆角贴着很丑 */
 .menu-row:last-child {
   border-bottom: none;
 }
@@ -346,13 +315,11 @@ async function onInstall() {
   color: var(--ink-3);
 }
 
-/* 右侧箭头：用边框画，比字符 › 在各机型上更稳 */
 .chevron {
   color: #c5c5cc;
   font-size: 0.15rem;
 }
 
-/* ─── 清空购物车 ─────────────────────────────────────────────────────────── */
 .danger {
   display: block;
   width: calc(100% - 0.2rem);
@@ -363,8 +330,6 @@ async function onInstall() {
   font-size: 0.13rem;
 }
 
-/* ── 「装到手机桌面」卡片 ─────────────────────────────── */
-
 .pwa-tip {
   margin: 0.06rem 0 0;
   font-size: 0.12rem;
@@ -372,12 +337,10 @@ async function onInstall() {
   color: var(--ink-2);
 }
 
-/* 已经装好的状态行，绿色提示 */
 .pwa-ok {
   color: var(--green);
 }
 
-/* 安装按钮：品牌色实底，宽度撑满卡片 */
 .install-btn {
   display: block;
   width: 100%;
@@ -390,7 +353,6 @@ async function onInstall() {
   font-weight: 600;
 }
 
-/* 手动指引里提到的系统按钮，用键帽样式突出 */
 .kbd {
   display: inline-block;
   padding: 0 0.05rem;

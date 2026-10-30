@@ -5,7 +5,6 @@
       <span v-if="cart.items.length" class="count">共 {{ cart.items.length }} 种商品</span>
     </header>
 
-    <!-- 空态：购物车空是高频场景，必须专门做，不能是一片白 -->
     <div v-if="!cart.items.length" class="empty">
       <div class="empty-icon">🛒</div>
       <p class="empty-title">购物车还是空的</p>
@@ -16,7 +15,7 @@
     <template v-else>
       <ul class="list">
         <li v-for="it in cart.items" :key="it.key" class="item">
-          <!-- 勾选框：视觉上是小圆，热区做到 44px -->
+
           <button
             class="check tap tap-44"
             :class="{ on: it.checked }"
@@ -48,7 +47,7 @@
                 >+</button>
               </div>
             </div>
-            <!-- 库存不多了给个提示，避免下单时才发现 -->
+
             <span v-if="it.count >= it.stock" class="stock-tip">已达库存上限</span>
           </div>
 
@@ -61,7 +60,6 @@
         </li>
       </ul>
 
-      <!-- 底部结算栏 -->
       <div class="checkout-bar">
         <button class="check-all tap tap-44" @click="cart.toggleAll(!cart.allChecked)">
           <span class="check" :class="{ on: cart.allChecked }">
@@ -91,12 +89,6 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 购物车页
-//
-// 数据全部来自 Pinia（stores/cart.js），本页只负责展示和转发用户操作。
-// 好处：在详情页加购后，本页和底部角标会自动更新，不用写任何同步代码。
-// ============================================================================
 
 import { useRouter } from 'vue-router'
 import { useCartStore } from '../stores/cart'
@@ -123,11 +115,7 @@ function goOrder() {
 <style scoped>
 .cart-page {
   background: var(--bg);
-  /*
-    底部要同时让出"结算栏"和"Tab 栏"两层：
-      Tab 栏高度 --tab-h（0.5rem）+ 结算栏约 0.56rem + 安全区
-    少算任何一层，最后一件商品都会被挡住。
-  */
+
   padding-bottom: calc(1.06rem + var(--safe-bottom));
 }
 
@@ -148,7 +136,6 @@ function goOrder() {
   color: var(--ink-3);
 }
 
-/* ─── 空态 ───────────────────────────────────────────────────────────────── */
 .empty {
   padding: 0.9rem 0.3rem;
   text-align: center;
@@ -183,7 +170,6 @@ function goOrder() {
   line-height: 0.4rem;
 }
 
-/* ─── 列表 ───────────────────────────────────────────────────────────────── */
 .list {
   padding: 0 0.1rem;
 }
@@ -304,7 +290,6 @@ function goOrder() {
   flex-shrink: 0;
 }
 
-/* ─── 结算栏 ─────────────────────────────────────────────────────────────── */
 .checkout-bar {
   position: fixed;
   left: 0;
@@ -315,8 +300,7 @@ function goOrder() {
   align-items: center;
   gap: 0.08rem;
   padding: 0.08rem 0.12rem;
-  /* 安全区：加 Tab 栏高度，购物车页底部 Tab 栏仍然存在，
-     结算栏要坐在它上面，所以再把 --tab-h 让出来 */
+
   padding-bottom: calc(0.08rem + var(--safe-bottom));
   bottom: calc(var(--tab-h) + var(--safe-bottom));
   background: rgba(255, 255, 255, 0.96);

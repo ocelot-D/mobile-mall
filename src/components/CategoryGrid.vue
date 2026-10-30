@@ -15,14 +15,6 @@
 </template>
 
 <script setup>
-// ============================================================================
-// 首页分类入口（九宫格）
-//
-// 断点栅格在这里体现：
-//   常规手机  → 一行 4 个（两行放完 6 个分类 + 留白）
-//   窄屏 ≤320 → 一行 3 个，4 个会把文字挤成两行
-// 用 CSS 媒体查询改 grid-template-columns，不需要 JS 参与，最简单也最稳。
-// ============================================================================
 
 defineProps({
   categories: { type: Array, default: () => [] },
@@ -42,7 +34,6 @@ defineEmits(['select'])
   margin: 0.1rem;
 }
 
-/* 窄屏降级成 3 列：320px 宽放 4 列，每个只有 72px，文字必然折行 */
 @media (max-width: 320px) {
   .cat-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -54,7 +45,7 @@ defineEmits(['select'])
   flex-direction: column;
   align-items: center;
   gap: 0.05rem;
-  /* 点击区至少 44px 高，图标本身只有 44px 宽 */
+
   min-height: var(--tap);
 }
 

@@ -1,9 +1,6 @@
 <template>
   <div class="page home has-tabbar">
-    <!--
-      吸顶搜索栏：放在 PullRefresh 外面，下拉刷新时它不动，
-      只有下面的内容跟着手指走。这样下拉的手感才对。
-    -->
+
     <SearchBar readonly sticky placeholder="搜索商品" @focus="goSearch" />
 
     <PullRefresh
@@ -14,13 +11,11 @@
       @refresh="reload"
       @load-more="loadMore"
     >
-      <!-- 轮播：拿到数据才渲染，没拿到就不占位（避免一个灰色空块） -->
+
       <BannerSwiper v-if="banners.length" :list="banners" class="animated-bg" />
 
-      <!-- 分类入口九宫格 -->
       <CategoryGrid :categories="categories" @select="onPickCategory" />
 
-      <!-- 分区标题 + 排序 -->
       <div class="section-bar">
         <h2 class="section-title">为你推荐</h2>
         <div class="sorts">
@@ -34,29 +29,16 @@
         </div>
       </div>
 
-      <!-- 四态：加载中 / 空 / 错误 / 正常 -->
       <StateView :state="state" :error="error" @retry="reload">
         <Waterfall :items="items" />
       </StateView>
     </PullRefresh>
 
-    <!--
-      一键回到顶部。
-      放在 PullRefresh 外面：它是 fixed 定位，不参与页面排版，
-      而且下拉刷新拽内容时它不该跟着动。
-    -->
     <BackTop />
   </div>
 </template>
 
 <script setup>
-// ============================================================================
-// 首页
-//
-// 结构：吸顶搜索 → 轮播 → 分类九宫格 → 排序 → 商品瀑布流
-// 数据：商品列表走 useProductList（分页 / 下拉刷新 / 上拉加载 / 四态都在里面），
-//       轮播和分类是独立的小请求，失败也不影响主流程，所以单独处理。
-// ============================================================================
 
 import { ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
@@ -74,7 +56,6 @@ import { getBanners, getCategories } from '../utils/request'
 
 const router = useRouter()
 
-// 排序选项
 const SORTS = [
   { key: 'default', label: '综合' },
   { key: 'sales', label: '销量' },
@@ -82,7 +63,6 @@ const SORTS = [
   { key: 'price-desc', label: '价格↓' },
 ]
 
-// 商品列表状态机（首页、分类页、搜索页共用同一套）
 const {
   items, hasMore, loading, loadingMore, error, state, query,
   reload, loadMore, setQuery,
@@ -91,14 +71,13 @@ const {
 const banners = ref([])
 const categories = ref([])
 
-/** 轮播和分类：失败也不弹错，顶多少两块内容，不能因为附属数据让整页变错误态 */
 async function loadMeta() {
   try {
     const [b, c] = await Promise.all([getBanners(), getCategories()])
     banners.value = b
     categories.value = c
   } catch {
-    // 静默失败：主流程（商品列表）不受影响
+
     banners.value = []
     categories.value = []
   }
@@ -108,12 +87,10 @@ function goSearch() {
   router.push('/search')
 }
 
-/** 点分类九宫格：跳到分类页并选中该分类 */
 function onPickCategory(cat) {
   router.push({ path: '/category', query: { c: cat.id } })
 }
 
-/** 切排序：改条件后重新拉第一页 */
 function onSort(key) {
   if (query.sort === key) return
   setQuery({ sort: key })
@@ -131,7 +108,6 @@ onMounted(() => {
   background: var(--bg);
 }
 
-/* 分区标题栏 */
 .section-bar {
   display: flex;
   align-items: center;
@@ -146,7 +122,6 @@ onMounted(() => {
   padding-left: 0.1rem;
 }
 
-/* 标题左边那根竖条：纯装饰，让分区感更强 */
 .section-title::before {
   content: '';
   position: absolute;

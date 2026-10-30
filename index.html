@@ -3,50 +3,23 @@
 <head>
   <meta charset="UTF-8" />
 
-  <!--
-    viewport 是移动端适配的第一道门，这行决定后面所有 CSS 怎么算。
-    width=device-width      让布局视口宽度等于设备宽度，而不是默认的 980px
-    initial-scale=1         初始不缩放
-    maximum-scale=1         禁止双指放大。商城类页面手指误触放大后会很难用，
-                            所以禁掉（但要保证字号够大，别做成无障碍问题）
-    user-scalable=no        同上，配合 maximum-scale 在 iOS 上才稳
-    viewport-fit=cover  ★关键★
-                            默认的 viewport 会把页面限制在"安全区"内，
-                            导致 iPhone X 以后的机型左右两侧有白边。
-                            加了 cover 之后页面铺满整屏，
-                            再由我们自己在 CSS 里用 env(safe-area-inset-*) 把
-                            内容顶开，这样才能做出"刘海屏通栏"的效果。
-  -->
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 
-  <!-- 移动端浏览器顶部的地址栏颜色（安卓 Chrome 生效） -->
   <meta name="theme-color" content="#ffffff" />
 
-  <!--
-    「添加到主屏幕」三件套：
-    1. manifest   应用清单：图标、名字、独立窗口模式全在这份 JSON 里
-    2. iOS 专用 meta  Safari 不认 manifest，要单独声明
-    3. apple-touch-icon  iOS 添加到主屏幕时用的图标（必须 PNG、不透明）
-  -->
   <link rel="manifest" href="/manifest.webmanifest" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-title" content="MobiMall" />
   <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
   <link rel="icon" type="image/png" href="/icons/icon-192.png" />
 
-  <!-- 声明这是一个 Web App，iOS 上"添加到主屏幕"后不显示 Safari 地址栏 -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="format-detection" content="telephone=no" />
 
   <title>MobiMall · 移动端 H5 商城</title>
 
-  <!--
-    首屏骨架样式：JS 和 CSS 还没加载完时先显示这个背景，
-    避免出现"白屏一下再出内容"的观感。
-    这段必须内联，外链 CSS 要等下载，来不及。
-  -->
   <style>
     html, body { margin: 0; background: #f6f6f8; }
     #app { min-height: 100vh; }
