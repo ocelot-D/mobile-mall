@@ -17,7 +17,13 @@
         class="slide"
         @click="$emit('click-banner', b)"
       >
-        <img :src="`/${b.img}`" :alt="b.title" class="slide-img" />
+        <!--
+          图片地址统一走 imgSrc() 出口：
+          首页轮播传进来的 img/b1.svg → 拼成 /img/b1.svg（本地图）
+          详情页传进来的远程图地址 → 自动转 /api/img?u=... 代理（防直连被拒）
+          之前详情页的图在这里被强加了 "/" 前缀直接裸连图床，手机上全是挂的
+        -->
+        <img :src="imgSrc(b.img)" :alt="b.title" class="slide-img" />
       </div>
     </div>
 
@@ -48,6 +54,7 @@
 // ============================================================================
 
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
+import { imgSrc } from '../utils/format'
 
 const props = defineProps({
   list: { type: Array, default: () => [] },

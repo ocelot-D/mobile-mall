@@ -56,6 +56,35 @@ const DELAY = Number(process.env.MOBI_DELAY ?? 120)
 // 任何人都能拿它去请求任意网址（包括内网地址），这就是典型的 SSRF 漏洞。
 const IMG_HOSTS = ['cdn.dummyjson.com', 'dummyjson.com']
 
+// ─── 图片代理的取图辅助 ─────────────────────────────────────────────────────
+// imgCache：取回来的图在内存里放 5 分钟（和浏览器缓存时间一致）。
+//   为什么不放磁盘？项目要求"自包含"且用户没同意往电脑里存商品图，
+//   内存缓存进程一重启就没了，天然不会在电脑上留下文件。
+// imgPending：正在取的图按地址记一条 Promise，同一个地址的并发请求共用一次取图。
+const IMG_CACHE_TTL = 5 * 60 * 1000
+const imgCache = new Map()
+const imgPending = new Map()
+
+/** 取一张远程图，失败自动重试 1 次（图源偶发抖一下不该让用户看到破图） */
+async function fetchImgWithRetry(href) {
+  let lastErr
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      if (attempt > 0) await sleep(300) // 重试前缓 300ms，别顶着失败的连接硬刚
+      const upstream = await fetch(href, {
+        signal: AbortSignal.timeout(12000),
+        headers: { 'User-Agent': 'MobiMall/1.0', Accept: 'image/*' },
+      })
+      if (!upstream.ok) throw new Error('图源返回 ' + upstream.status)
+      const buf = Buffer.from(await upstream.arrayBuffer())
+      return { buf, type: upstream.headers.get('content-type') || 'image/webp' }
+    } catch (err) {
+      lastErr = err
+    }
+  }
+  throw lastErr
+}
+
 // ============================================================================
 // 数据在内存里的缓存
 // ============================================================================
@@ -408,20 +437,37 @@ async function handleApi(req, res, url) {
       return sendFail(res, 403, '图源不在白名单内：' + target.hostname)
     }
 
-    try {
-      const upstream = await fetch(target.href, {
-        signal: AbortSignal.timeout(12000),
-        headers: { 'User-Agent': 'MobiMall/1.0', Accept: 'image/*' },
-      })
-      if (!upstream.ok) return sendFail(res, 502, '图源返回 ' + upstream.status)
-
-      const buf = Buffer.from(await upstream.arrayBuffer())
+    // ── 第一层：内存缓存 ──
+    // 详情页一进来会同时要 4~5 张图，如果每次都去图源拉，慢且偶发失败。
+    // 缓存 5 分钟，和浏览器端的 Cache-Control 保持一致：既"实时"，又省流量。
+    const cached = imgCache.get(raw)
+    if (cached && Date.now() - cached.at < IMG_CACHE_TTL) {
       res.writeHead(200, {
-        'Content-Type': upstream.headers.get('content-type') || 'image/webp',
-        'Content-Length': buf.length,
-        // 短缓存 5 分钟：既保证"实时"（换图 5 分钟内生效），
-        // 又避免同一个用户来回翻页面时每次都重新下载一遍，省流量
+        'Content-Type': cached.type,
+        'Content-Length': cached.buf.length,
         'Cache-Control': 'public, max-age=300',
+        'X-Cache': 'hit',
+      })
+      return res.end(cached.buf)
+    }
+
+    // ── 第二层：并发去重 ──
+    // 同一张图瞬间来 5 个请求，只让第 1 个真正去取，其余的等同一个 Promise，
+    // 不然等于把并发压力原样转发给图源（502 就是这么来的）。
+    if (!imgPending.has(raw)) {
+      imgPending.set(
+        raw,
+        fetchImgWithRetry(target.href).finally(() => imgPending.delete(raw))
+      )
+    }
+    try {
+      const { buf, type } = await imgPending.get(raw)
+      imgCache.set(raw, { buf, type, at: Date.now() })
+      res.writeHead(200, {
+        'Content-Type': type,
+        'Content-Length': buf.length,
+        'Cache-Control': 'public, max-age=300',
+        'X-Cache': 'miss',
       })
       return res.end(buf)
     } catch (err) {
