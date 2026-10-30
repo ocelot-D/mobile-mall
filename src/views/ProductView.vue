@@ -183,7 +183,7 @@ const specDelta = computed(() => {
   }, 0)
 })
 
-/** 规格切换后价格要跟着变（这是详情页最容易被问到的点） */
+/** 规格切换后价格要跟着变 */
 const currentPrice = computed(() => {
   if (!product.value) return 0
   return Math.round((product.value.price + specDelta.value) * 100) / 100
@@ -487,7 +487,7 @@ onMounted(load)
   align-items: center;
   gap: 0.08rem;
   padding: 0.08rem 0.12rem;
-  /* ★ 安全区 ★：这一行保证按钮不被 iPhone 底部横条压住 */
+  /* 安全区：这一行保证按钮不被 iPhone 底部横条压住 */
   padding-bottom: calc(0.08rem + var(--safe-bottom));
   background: rgba(255, 255, 255, 0.96);
   border-top: 1px solid var(--line);

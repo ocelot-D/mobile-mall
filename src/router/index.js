@@ -6,14 +6,14 @@
 //   这个滚动位置恢复自己写很麻烦，路由自带 scrollBehavior 就解决了。
 //
 // 对比：StreamChat 只有两个页面，用 v-if 切换就够，所以没装路由。
-//   面试问"你什么时候会用路由、什么时候不用"，这个取舍能说清楚就是加分。
+//   页面少、不需要地址栏和前进后退的，用 v-if 切换就够了，不必上路由。
 // ============================================================================
 
 import { createRouter, createWebHistory } from 'vue-router'
 
 // 页面全部用懒加载：() => import(...)
 // 好处：访问首页时只下载首页的代码，详情页的代码等点进去才下，
-// 首屏体积小很多。这条正好能连到"性能优化"那条 JD 加分项上。
+// 首屏体积小很多，这是实打实的首屏优化。
 const HomeView = () => import('../views/HomeView.vue')
 const CategoryView = () => import('../views/CategoryView.vue')
 const CartView = () => import('../views/CartView.vue')

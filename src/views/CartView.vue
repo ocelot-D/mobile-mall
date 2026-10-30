@@ -315,7 +315,7 @@ function goOrder() {
   align-items: center;
   gap: 0.08rem;
   padding: 0.08rem 0.12rem;
-  /* ★ 安全区 ★ 加 Tab 栏高度：购物车页底部 Tab 栏仍然存在，
+  /* 安全区：加 Tab 栏高度，购物车页底部 Tab 栏仍然存在，
      结算栏要坐在它上面，所以再把 --tab-h 让出来 */
   padding-bottom: calc(0.08rem + var(--safe-bottom));
   bottom: calc(var(--tab-h) + var(--safe-bottom));
