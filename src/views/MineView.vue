@@ -2,9 +2,9 @@
   <div class="page mine-page has-tabbar">
 
     <header class="hero">
-      <div class="avatar">李</div>
+      <div class="avatar">熊</div>
       <div class="user">
-        <p class="name">李木子 <span class="vip">VIP1</span></p>
+        <p class="name">熊大<span class="vip">VIP1</span></p>
         <p class="uid">手机号：138****8000</p>
       </div>
       <button class="setting tap" aria-label="设置" @click="onStub">⚙</button>
