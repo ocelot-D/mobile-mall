@@ -1,62 +1,49 @@
 <template>
   <div class="page mine-page has-tabbar">
-    <!-- 用户头部 -->
+    <!-- 用户头部：头像 + 昵称 + 手机号（脱敏） + 会员标 -->
     <header class="hero">
-      <div class="avatar">M</div>
+      <div class="avatar">李</div>
       <div class="user">
-        <p class="name">MobiMall 体验用户</p>
-        <p class="uid">ID: 10086</p>
+        <p class="name">李木子 <span class="vip">VIP1</span></p>
+        <p class="uid">手机号：138****8000</p>
       </div>
+      <button class="setting tap" aria-label="设置" @click="onStub">⚙</button>
     </header>
 
-    <!-- 订单入口（演示用，点击提示） -->
-    <section class="card-block orders">
-      <button v-for="o in ORDER_ENTRIES" :key="o.label" class="order-entry tap" @click="onStub">
-        <span class="order-icon">{{ o.icon }}</span>
-        <span class="order-label">{{ o.label }}</span>
+    <!-- 资产栏：优惠券 / 积分 / 余额 / 收藏，仿真数据 -->
+    <section class="card-block assets">
+      <button v-for="a in ASSETS" :key="a.label" class="asset tap" @click="onStub">
+        <span class="asset-num">{{ a.num }}</span>
+        <span class="asset-label">{{ a.label }}</span>
       </button>
     </section>
 
-    <!-- ★ 低端机降级开关：面试演示这一屏就够了 ★ -->
+    <!-- 订单入口：右上角的红色角标是真实电商的标配（有新状态就提示你去看） -->
     <section class="card-block">
-      <div class="switch-row">
-        <div class="switch-info">
-          <p class="switch-title">流畅模式（性能优先）</p>
-          <p class="switch-desc">关闭毛玻璃与渐变动画，低端机滚动不掉帧</p>
-        </div>
-        <button
-          class="switch tap"
-          :class="{ on: device.low }"
-          :aria-pressed="device.low"
-          @click="toggle"
-        >
-          <span class="knob"></span>
+      <div class="row-head">
+        <h2 class="block-title">我的订单</h2>
+        <button class="all-orders tap" @click="onStub">全部订单 ›</button>
+      </div>
+      <div class="orders">
+        <button v-for="o in ORDER_ENTRIES" :key="o.label" class="order-entry tap" @click="onStub">
+          <span class="order-icon">
+            {{ o.icon }}
+            <!-- 有待处理数量才显示角标，没有不显示 -->
+            <i v-if="o.badge" class="badge">{{ o.badge }}</i>
+          </span>
+          <span class="order-label">{{ o.label }}</span>
         </button>
       </div>
-
-      <!-- 把判定依据显示出来：面试时不用嘴说"我判断了"，指着屏幕讲就行 -->
-      <div class="device-info">
-        <div class="info-row"><span>CPU 核心</span><span>{{ device.cores }} 核</span></div>
-        <div class="info-row"><span>内存</span><span>{{ device.memory ? `${device.memory} GB` : '未知' }}</span></div>
-        <div class="info-row"><span>像素比 DPR</span><span>{{ device.dpr }}</span></div>
-        <div class="info-row"><span>省流模式</span><span>{{ device.saveData ? '已开启' : '未开启' }}</span></div>
-        <div class="info-row"><span>系统减弱动效</span><span>{{ device.reducedMotion ? '已开启' : '未开启' }}</span></div>
-        <div class="info-row"><span>自动判定结果</span><span>{{ device.autoLow ? '低端机' : '正常' }}</span></div>
-        <div class="info-row"><span>当前模式</span>
-          <span :class="device.low ? 'tag-low' : 'tag-high'">{{ device.low ? '已降级' : '完整效果' }}</span>
-        </div>
-        <p class="reason">判定依据：{{ device.reason }}</p>
-      </div>
-
-      <button class="reset tap tap-44" @click="reset">恢复自动判定</button>
     </section>
 
-    <!-- 项目技术点：放在这里是给面试官看的，点开就能对上简历那几条 -->
-    <section class="card-block">
-      <h2 class="block-title">本项目做了什么</h2>
-      <ul class="points">
-        <li v-for="p in POINTS" :key="p">{{ p }}</li>
-      </ul>
+    <!-- 常用功能菜单：箭头行，主流电商个人中心的标准形态 -->
+    <section class="card-block menu">
+      <button v-for="m in MENU" :key="m.label" class="menu-row tap tap-44" @click="onStub">
+        <span class="menu-icon">{{ m.icon }}</span>
+        <span class="menu-label">{{ m.label }}</span>
+        <span class="menu-extra">{{ m.extra }}</span>
+        <span class="chevron">›</span>
+      </button>
     </section>
 
     <!-- 「安装到主屏幕」：H5 秒变"类 App"体验的入口，真机演示就点这里 -->
@@ -92,56 +79,46 @@
 
 <script setup>
 // ============================================================================
-// 我的
+// 我的（用户中心）
 //
-// 这一页除了常规的个人信息，还承担一个作用：
-// 把"低端机降级"做成可见可切换的开关，方便演示。
-//
-// 面试场景：
-//   面试官问"移动端你踩过什么坑"，
-//   直接翻开这一页，指着"流畅模式"开关说：
-//   "我在低端安卓上发现毛玻璃掉帧，所以做了设备分级，
-//    这里可以现场切换，上面是当前机器的判定依据。"
-//   比口头描述有说服力得多。
+// 页面形态照着主流电商 App 的个人中心做：头部用户卡 → 资产栏 → 订单 → 菜单。
+// 演示项目没有登录态和订单模块，所有入口点击统一走 onStub 提示，
+// 数据写死但结构真实（角标、脱敏手机号这些细节都在）。
 // ============================================================================
 
-import { device, setLowEndMode, resetLowEndMode } from '../composables/useDeviceTier'
 import { useCartStore } from '../stores/cart'
 import { toast, toastOk } from '../composables/useToast'
 // PWA 安装状态与触发函数（本页"装到手机桌面"卡片用）
 import { canInstall, isStandalone, isIOS, promptInstall } from '../composables/usePwaInstall'
 
-// 模板里用 pwa.xxx 引用，避免五个变量名打架
+// 模板里用 pwa.xxx 引用，避免变量名打架
 const pwa = { canInstall, isStandalone, isIOS }
 
 const cart = useCartStore()
 
+// 资产栏：数字和标签写死，仿真展示
+const ASSETS = [
+  { num: '3', label: '优惠券' },
+  { num: '1280', label: '积分' },
+  { num: '¥0.00', label: '余额' },
+  { num: '12', label: '收藏' },
+]
+
+// 订单四入口，badge 是待处理数量（用来显示红色角标）
 const ORDER_ENTRIES = [
-  { icon: '💰', label: '待付款' },
-  { icon: '📦', label: '待发货' },
-  { icon: '🚚', label: '待收货' },
-  { icon: '↩️', label: '退款' },
+  { icon: '💰', label: '待付款', badge: 1 },
+  { icon: '📦', label: '待发货', badge: 2 },
+  { icon: '🚚', label: '待收货', badge: 0 },
+  { icon: '↩️', label: '退款/售后', badge: 0 },
 ]
 
-// 简历上那六条的精简版，放在页面上方便对照
-const POINTS = [
-  '移动端适配：rem/vw 基准 + 断点栅格 + clamp() 流式字号',
-  '视口与安全区：100dvh + env(safe-area-inset-bottom)',
-  '触摸交互：:hover 全部补 :active，可点区域最小 44px',
-  '下拉刷新 + 上拉加载更多：触摸事件 + 节流，三态文案齐全',
-  '图片策略：IntersectionObserver 懒加载 + 固定宽高消除 CLS',
-  '低端机降级：关毛玻璃与渐变动画，prefers-reduced-motion 兜底',
+// 常用功能菜单，extra 是右侧灰字（仿真实 App 的信息前置）
+const MENU = [
+  { icon: '📍', label: '收货地址', extra: '' },
+  { icon: '🎫', label: '领券中心', extra: '3 张可用' },
+  { icon: '💬', label: '联系客服', extra: '' },
+  { icon: '⭐', label: '关于 MobiMall', extra: 'v1.0' },
 ]
-
-function toggle() {
-  setLowEndMode(!device.low)
-  toast(device.low ? '已切换到流畅模式' : '已恢复完整效果')
-}
-
-function reset() {
-  resetLowEndMode()
-  toastOk('已恢复自动判定')
-}
 
 function clearCart() {
   if (!cart.items.length) {
@@ -153,7 +130,7 @@ function clearCart() {
 }
 
 function onStub() {
-  toast('这是演示项目，订单模块未接入', 'warn')
+  toast('这是演示项目，该模块未接入', 'warn')
 }
 
 // ---------------------------------------------------------------------------
@@ -177,6 +154,7 @@ async function onInstall() {
   background: var(--bg);
 }
 
+/* ─── 用户头部 ───────────────────────────────────────────────────────────── */
 .hero {
   display: flex;
   align-items: center;
@@ -198,9 +176,27 @@ async function onInstall() {
   font-weight: 700;
 }
 
+.user {
+  flex: 1;
+  min-width: 0;
+}
+
 .name {
   font-size: 0.16rem;
   font-weight: 600;
+}
+
+/* 会员标：小黄牌，仿真电商都有 */
+.vip {
+  display: inline-block;
+  margin-left: 0.06rem;
+  padding: 0 0.05rem;
+  border-radius: 0.04rem;
+  background: #ffe9c8;
+  color: #9a6a1f;
+  font-size: 0.09rem;
+  font-weight: 600;
+  vertical-align: 0.01rem;
 }
 
 .uid {
@@ -209,29 +205,40 @@ async function onInstall() {
   opacity: 0.85;
 }
 
-/* ─── 订单入口 ───────────────────────────────────────────────────────────── */
-.orders {
+/* 右上角设置按钮，44px 点击区 */
+.setting {
+  width: var(--tap);
+  height: var(--tap);
+  color: #fff;
+  font-size: 0.18rem;
+}
+
+/* ─── 资产栏 ─────────────────────────────────────────────────────────────── */
+.assets {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0.1rem;
-  padding: 0.14rem 0;
+  padding: 0.12rem 0;
 }
 
-.order-entry {
+.asset {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.04rem;
+  gap: 0.03rem;
   min-height: var(--tap);
+  justify-content: center;
 }
 
-.order-icon {
-  font-size: 0.2rem;
+.asset-num {
+  font-size: 0.15rem;
+  font-weight: 600;
+  color: var(--ink);
 }
 
-.order-label {
+.asset-label {
   font-size: 0.11rem;
-  color: var(--ink-2);
+  color: var(--ink-3);
 }
 
 /* ─── 通用块 ─────────────────────────────────────────────────────────────── */
@@ -245,131 +252,107 @@ async function onInstall() {
 .block-title {
   font-size: 0.14rem;
   font-weight: 600;
-  margin-bottom: 0.08rem;
 }
 
-/* ─── 开关 ───────────────────────────────────────────────────────────────── */
-.switch-row {
+.row-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.1rem;
 }
 
-.switch-title {
-  font-size: 0.14rem;
-  font-weight: 600;
-}
-
-.switch-desc {
-  margin-top: 0.02rem;
-  font-size: 0.11rem;
-  color: var(--ink-3);
-}
-
-.switch {
-  position: relative;
-  flex-shrink: 0;
-  width: 0.46rem;
-  height: 0.28rem;
-  border-radius: 0.14rem;
-  background: #d8d8de;
-  transition: background 0.2s ease;
-}
-
-.switch.on {
-  background: var(--brand);
-}
-
-.knob {
-  position: absolute;
-  top: 0.02rem;
-  left: 0.02rem;
-  width: 0.24rem;
-  height: 0.24rem;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0.01rem 0.03rem rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
-}
-
-.switch.on .knob {
-  /* 平移而不是改 left：transform 走 GPU，切换更顺 */
-  transform: translateX(0.18rem);
-}
-
-/* 开关本身不做缩放，:active 缩了会看着像坏了 */
-.switch:active {
-  transform: none;
-}
-
-/* ─── 设备信息 ───────────────────────────────────────────────────────────── */
-.device-info {
-  margin-top: 0.12rem;
-  padding-top: 0.12rem;
-  border-top: 1px solid var(--line);
-}
-
-.info-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.04rem 0;
+/* "全部订单"：右侧灰字链接 */
+.all-orders {
   font-size: 0.12rem;
-  color: var(--ink-2);
-}
-
-.tag-low {
-  color: var(--brand);
-  font-weight: 600;
-}
-
-.tag-high {
-  color: var(--green);
-  font-weight: 600;
-}
-
-.reason {
-  margin-top: 0.08rem;
-  font-size: 0.11rem;
   color: var(--ink-3);
-  line-height: 1.5;
 }
 
-.reset {
-  width: 100%;
+/* ─── 订单入口 ───────────────────────────────────────────────────────────── */
+.orders {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 0.1rem;
-  border-radius: 0.06rem;
-  background: #f5f5f7;
-  font-size: 0.12rem;
-  color: var(--ink-2);
+  padding: 0.02rem 0;
 }
 
-/* ─── 技术点 ─────────────────────────────────────────────────────────────── */
-.points {
+.order-entry {
   display: flex;
   flex-direction: column;
-  gap: 0.07rem;
+  align-items: center;
+  gap: 0.04rem;
+  min-height: var(--tap);
 }
 
-.points li {
+.order-icon {
   position: relative;
-  padding-left: 0.14rem;
-  font-size: 0.12rem;
-  color: var(--ink-2);
-  line-height: 1.6;
+  font-size: 0.2rem;
+  line-height: 1;
 }
 
-.points li::before {
-  content: '';
+/* 红色角标：待处理数量，超过 9 显示 9+（真实 App 的通用做法） */
+.badge {
   position: absolute;
-  left: 0;
-  top: 0.08rem;
-  width: 0.05rem;
-  height: 0.05rem;
-  border-radius: 50%;
-  background: var(--brand);
+  top: -0.05rem;
+  right: -0.11rem;
+  min-width: 0.16rem;
+  height: 0.16rem;
+  padding: 0 0.03rem;
+  border-radius: 0.08rem;
+  background: #f43;
+  color: #fff;
+  font-size: 0.09rem;
+  font-style: normal;
+  line-height: 0.16rem;
+  text-align: center;
+  box-sizing: border-box;
 }
 
+.order-label {
+  font-size: 0.11rem;
+  color: var(--ink-2);
+}
+
+/* ─── 菜单列表 ───────────────────────────────────────────────────────────── */
+.menu {
+  padding: 0 0.14rem;
+}
+
+.menu-row {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  width: 100%;
+  padding: 0.12rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.13rem;
+  color: var(--ink);
+  text-align: left;
+}
+
+/* 最后一行不要分隔线，不然和卡片圆角贴着很丑 */
+.menu-row:last-child {
+  border-bottom: none;
+}
+
+.menu-icon {
+  font-size: 0.16rem;
+}
+
+.menu-label {
+  flex: 1;
+}
+
+.menu-extra {
+  font-size: 0.11rem;
+  color: var(--ink-3);
+}
+
+/* 右侧箭头：用边框画，比字符 › 在各机型上更稳 */
+.chevron {
+  color: #c5c5cc;
+  font-size: 0.15rem;
+}
+
+/* ─── 清空购物车 ─────────────────────────────────────────────────────────── */
 .danger {
   display: block;
   width: calc(100% - 0.2rem);
