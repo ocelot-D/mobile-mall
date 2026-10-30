@@ -194,7 +194,7 @@ MobiMall/
 ├─ data/
 │  ├─ products.json        商品数据（npm run seed 生成）
 │  └─ orders.json          订单（运行时写入）
-├─ public/img/             117 张 SVG（轮播图 + 分类图标，npm run seed 生成）
+├─ public/img/             9 张 SVG（6 个分类图标 + 3 张轮播，npm run seed 生成）
 │                          ★ 商品图不在这里，实时从图源经 /api/img 代理拉取
 ├─ scripts/
 │  └─ gen-seed.mjs         商品数据 + 图片生成脚本

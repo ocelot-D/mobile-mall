@@ -179,6 +179,10 @@ for (const cat of CATEGORIES) {
 //
 // 一张图 = 渐变背景 + 几个半透明几何图形 + 商品编号 + 分类名。
 // 为什么这么做：既好看又完全没有版权风险，而且体积只有 1KB 左右。
+//
+// ★ 这个函数现在**没有被调用**（商品图改成实时远程图了），保留下来是为了：
+//   万一哪天图源挂了、或者想在没网的环境演示，把 main() 里的生成循环加回来即可，
+//   配合 npm run seed 就能瞬间恢复一批本地占位图。
 // ────────────────────────────────────────────────────────────────────────────
 function makeProductSvg(p, index) {
   const W = 600
@@ -261,14 +265,13 @@ async function main() {
   if (!existsSync(DATA_DIR)) await mkdir(DATA_DIR, { recursive: true })
   if (!existsSync(IMG_DIR)) await mkdir(IMG_DIR, { recursive: true })
 
-  // 图片：36 个商品 × 3 张 = 108 张，再加 6 个分类图标 + 3 张轮播
+  // 图片：只生成 6 个分类图标 + 3 张轮播（共 9 张，约 37KB）
+  //
+  // ★ 商品图不再在这里生成：现在商品数据里存的是图源的远程地址，
+  //   由后端 /api/img 实时代理取回，本机不落盘。
+  //   以前这里会生成 36 × 3 = 108 张 p*.svg 占位图，切换成实时图后它们没人引用，
+  //   已经清理掉；如果再生成一次就又回来了，所以干脆不生成。
   let imgCount = 0
-  for (const p of products) {
-    for (let i = 0; i < p.images.length; i += 1) {
-      await writeFile(path.join(IMG_DIR, `p${p.no}-${i + 1}.svg`), makeProductSvg(p, i), 'utf8')
-      imgCount += 1
-    }
-  }
   for (const cat of CATEGORIES) {
     await writeFile(path.join(IMG_DIR, `cat-${cat.id}.svg`), makeCategorySvg(cat), 'utf8')
     imgCount += 1
