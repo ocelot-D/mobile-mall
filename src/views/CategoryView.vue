@@ -78,7 +78,7 @@ const categories = ref([])
 // 初始分类从路由参数里取（首页点九宫格跳过来会带 ?c=digital）
 const {
   items, total, hasMore, loading, loadingMore, error, state, query,
-  reload, setQuery,
+  reload, loadMore, setQuery,
 } = useProductList({ category: route.query.c || 'all' }, 8)
 
 function pick(id) {
