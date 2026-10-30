@@ -92,7 +92,7 @@ const LIVE_CAT_MAP = [
 ]
 
 // 中文搜索词 → 图源英文关键词。
-// 商品名是英文原文（全球购定位），用户搜"耳机"得给他搜出 headphones 来。
+// 商品名保留图源英文原文，用户搜"耳机"得给他搜出 headphones 来。
 // 命中规则：中文词直接匹配标题/分类名，同时把这些英文词也纳入匹配。
 const LIVE_ZH_KW = {
   耳机: 'headphone earbuds airpods',
@@ -133,9 +133,8 @@ function mapLiveProduct(raw) {
     id: `d${raw.id}`,
     no: String(raw.id),
     title: raw.title,
-    // 副标题用"品牌 · 海外直采"：商品名是英文原文（全球购定位），
-    // 这行中文既说明了来路，又保证中文界面里看得懂这是什么类的东西
-    subtitle: `${raw.brand || cat.name} · 海外直采 · ${cat.name}`,
+    // 副标题 = 品牌 · 分类名，只说有用的信息
+    subtitle: `${raw.brand || cat.name} · ${cat.name}`,
     categoryId: cat.id,
     categoryName: cat.name,
     price,
@@ -155,12 +154,11 @@ function mapLiveProduct(raw) {
     // 参数表用图源的真实数据：质保、物流、退换政策都是图源原文，不是编的
     params: [
       { k: '品牌', v: raw.brand || '-' },
-      { k: '发货地', v: '海外直邮' },
       { k: '质保', v: raw.warrantyInformation || '-' },
       { k: '物流', v: raw.shippingInformation || '-' },
       { k: '退换', v: raw.returnPolicy || '-' },
     ],
-    desc: raw.description || `${raw.title}，海外直采。`,
+    desc: raw.description || `${raw.title}。`,
   }
 }
 

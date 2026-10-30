@@ -33,10 +33,6 @@
           @refresh="reload"
           @load-more="loadMore"
         >
-          <div class="panel-head">
-            <span class="count">共 {{ total }} 件</span>
-          </div>
-
           <StateView
             :state="state"
             :error="error"
@@ -167,11 +163,5 @@ watch(() => route.query.c, (v) => {
   flex: 1;
   min-width: 0;
   background: var(--bg);
-}
-
-.panel-head {
-  padding: 0.1rem 0.12rem;
-  font-size: 0.12rem;
-  color: var(--ink-3);
 }
 </style>
