@@ -39,6 +39,13 @@
         <Waterfall :items="items" />
       </StateView>
     </PullRefresh>
+
+    <!--
+      一键回到顶部。
+      放在 PullRefresh 外面：它是 fixed 定位，不参与页面排版，
+      而且下拉刷新拽内容时它不该跟着动。
+    -->
+    <BackTop />
   </div>
 </template>
 
@@ -60,6 +67,7 @@ import CategoryGrid from '../components/CategoryGrid.vue'
 import PullRefresh from '../components/PullRefresh.vue'
 import StateView from '../components/StateView.vue'
 import Waterfall from '../components/Waterfall.vue'
+import BackTop from '../components/BackTop.vue'
 
 import { useProductList } from '../composables/useProductList'
 import { getBanners, getCategories } from '../utils/request'

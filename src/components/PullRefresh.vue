@@ -252,6 +252,10 @@ onBeforeUnmount(() => {
     el.removeEventListener('touchcancel', onTouchEnd)
   }
   window.removeEventListener('scroll', onScroll)
+  // 节流的"尾沿补执行"定时器也要取消：
+  // 不然组件销毁后定时器到点还会 emit('load-more')，对着空气发请求
+  onScroll.cancel()
+  computeDistance.cancel()
 })
 </script>
 

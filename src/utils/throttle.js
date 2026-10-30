@@ -42,28 +42,70 @@ export function debounce(fn, wait = 300) {
 }
 
 /**
- * 节流：固定时间间隔内最多执行一次
+ * 节流：固定时间间隔内最多执行一次（首沿立即执行 + 尾沿补执行）
  *
- * @param {Function} fn      真正要执行的函数
+ * @param {Function} fn       真正要执行的函数
  * @param {number}   interval 间隔（毫秒）
- * @returns {Function}
+ * @returns {Function}        包装后的函数，带 .cancel() 可以取消待执行的尾沿
  *
  * 为什么本项目必须用节流？
  *   touchmove 和 scroll 事件在手机上一秒能触发上百次，
  *   每次都去算位置、改 DOM，主线程直接被占满，滑动就卡了。
  *   节流到 16 毫秒（约一帧一次）后，计算量降到 1/6，肉眼完全看不出延迟。
  *
- * 这里用的是"时间戳版"节流：第一次立即执行，之后每满一个间隔执行一次。
- * 另一种写法是定时器版（最后一次也会执行），滚动检测用时间戳版更跟手。
+ * ★ 为什么必须有"尾沿补执行"（这里踩过真坑）：
+ *   最早这版是"纯时间戳版"——间隔内的触发直接丢掉、不补。
+ *   用在"滚动到底加载下一页"上就出了 bug：用户滚到最后停下的那一下，
+ *   恰好落在上一个间隔内被丢掉，"到底了"这个判断就永远没做，
+ *   表现就是"上拉加载更多"挂在那，怎么拉都不加载。
+ *   修法：间隔内的触发不白丢，记一个定时器，到点把最后一次补执行。
+ *   这就是节流的标准完整形态：首沿立即执行保证跟手，尾沿补执行保证不漏。
+ *
+ *   尾沿调用用的是"最后一次的参数"：对滚动检测恰好是对的（要检查的就是
+ *   停下来的最终位置）；对 touchmove 场景，尾沿到达时手指多半已经抬起、
+ *   组件内部 dragging 已变 false，函数自己会短路返回，不会产生副作用。
  */
 export function throttle(fn, interval = 16) {
   let last = 0
+  let timer = null
+  // 尾沿要用的参数：间隔内每次触发都覆盖成最新的，
+  // 这样补执行时拿到的就是"最后一次"的参数
+  let pendingArgs = null
+  let pendingThis = null
 
-  return function wrapped(...args) {
+  function wrapped(...args) {
     const now = Date.now()
-    if (now - last >= interval) {
+    const remain = interval - (now - last)
+
+    if (remain <= 0) {
+      // 距上次执行已满一个间隔：立即执行（首沿）
       last = now
       fn.apply(this, args)
+    } else {
+      // 还在间隔内：记下最新参数，并保证有一个尾沿定时器
+      pendingArgs = args
+      pendingThis = this
+      if (!timer) {
+        timer = setTimeout(() => {
+          timer = null
+          last = Date.now()
+          fn.apply(pendingThis, pendingArgs)
+          pendingArgs = null
+          pendingThis = null
+        }, remain)
+      }
     }
   }
+
+  // 组件卸载时取消还没到点的尾沿，防止对已销毁的组件 emit（内存泄漏/脏调用）
+  wrapped.cancel = () => {
+    if (timer) {
+      clearTimeout(timer)
+      timer = null
+    }
+    pendingArgs = null
+    pendingThis = null
+  }
+
+  return wrapped
 }
