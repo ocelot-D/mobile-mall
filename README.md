@@ -188,6 +188,7 @@ npm run serve    # 打开 http://localhost:3002/
 启动时加环境变量 `MOBI_LIVE=0`。这层封的是"降级"。
 
 改本地数据：编辑 `scripts/gen-seed.mjs` 然后 `npm run seed`（只影响兜底层）。
+商品图地址的映射表在 `scripts/image-map.mjs`（gen-seed 和 sync-images 共用一份）。
 
 > 原则是"数据是壳，框架才是要卖的东西"。真实商品数据只有公司业务系统里才有，
 > 面试官看的是适配方案搭得对不对、组件抽得干不干净。
@@ -204,9 +205,13 @@ MobiMall/
 ├─ public/img/             9 张 SVG（6 个分类图标 + 3 张轮播，npm run seed 生成）
 │                          ★ 商品图不在这里，实时从图源经 /api/img 代理拉取
 ├─ scripts/
-│  └─ gen-seed.mjs         商品数据 + 图片生成脚本
+│  ├─ gen-seed.mjs         兜底商品数据 + 轮播/分类图生成（离线可跑）
+│  ├─ image-map.mjs        ★ 商品图映射表（gen-seed 与 sync-images 共用）
+│  ├─ sync-images.mjs      联网校正兜底商品的图片地址（可选）
+│  └─ gen-icons.mjs        PWA 图标（纯 Node 手写 PNG 编码，零依赖）
 ├─ server/
 │  └─ api-server.js        后端：Node 原生 http，零依赖
+│                          ★ 实时商品源就在这里（LIVE_* 一段，每 5 分钟刷新）
 ├─ src/
 │  ├─ style.css            ★ 移动端适配底座（最值钱的文件）
 │  ├─ main.js

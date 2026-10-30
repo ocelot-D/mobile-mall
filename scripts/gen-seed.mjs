@@ -1,27 +1,29 @@
 // ============================================================================
-// 种子数据生成脚本
+// 种子数据生成脚本（本地兜底层）
 //
-// 干什么：生成两份东西
-//   1. data/products.json  —— 商品数据（分类、价格、库存、规格）
-//   2. public/img/*.svg    —— 商品图 / 轮播图 / 分类图标
+// 干什么：生成 data/products.json —— 36 件中文商品，分类、价格、库存、规格自洽
 //
-// 为什么图片用代码生成 SVG，而不是去网上下载或外链？
-//   1. 没有版权问题（真实商品图随便用会侵权）
-//   2. 不依赖外部图片站，链接不会失效，断网也能跑
-//   3. 体积自己可控（一张图 1KB 左右），方便后面做性能对比实验
-//   4. SVG 是矢量图，手机上放大不会糊，比 WebP 还小
+// 这 36 件是"兜底数据"：
+//   后端默认走实时商品源（191 件，见 server/api-server.js 的 LIVE_* 部分），
+//   只有图源拉不到、或者用 MOBI_LIVE=0 关掉实时层时，才用这批数据。
+//
+// 商品图怎么写：
+//   直接写图源的远程地址（映射表在 scripts/image-map.mjs），
+//   由后端 /api/img 实时代理取回，本地一张图都不存。
+//   以前这里会生成 108 张 SVG 占位图，切换实时图后没人引用，已经清掉了。
 //
 // 为什么数据要"手写"而不是随机生成？
 //   随机出来的商品（"商品 1234"）打开一眼假，面试官一看就知道是凑数的。
 //   手写的分类、价格、库存、卖点互相自洽，打开才像一套正在用的商城。
 //
-// 跑法：npm run seed
+// 跑法：npm run seed（离线可跑，不需要联网）
 // ============================================================================
 
 import { writeFile, mkdir } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { MAP } from './image-map.mjs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -125,7 +127,14 @@ for (const cat of CATEGORIES) {
     // 编号统一补零成 3 位，文件名和商品 id 都用它，方便对照
     const no = String(seq).padStart(3, '0')
 
-    const [title, subtitle, price, originPrice, sales, stock, rating, ratio, tags, colorList, sizeList] = row
+    const [rawTitle, rawSubtitle, price, originPrice, sales, stock, rating, ratio, tags, colorList, sizeList] = row
+
+    // 商品名/副标题：优先用映射表里"对齐过图片"的名字。
+    // 比如图库里没有"机械键盘"，映射表把它改成了 MagSafe 手机壳，
+    // 这样名字、描述、图片三者一致，不会出现"耳机配手机图"的穿帮。
+    const conf = MAP[`p${no}`] || {}
+    const title = conf.title || rawTitle
+    const subtitle = conf.subtitle || rawSubtitle
 
     // 规格二里写 "名称|加价" 的解析成 { label, delta }。
     // delta 用来实现"详情页切规格价格跟着变"这个验收点。
@@ -148,12 +157,18 @@ for (const cat of CATEGORIES) {
       sales,
       stock,
       rating,
-      // 高宽比：宽 1，高就是这个值。写进 CSS aspect-ratio 用
-      ratio,
       tags,
-      // 图片列表：每个商品 3 张，详情页轮播用
-      images: [1, 2, 3].map((i) => `img/p${no}-${i}.svg`),
-      cover: `img/p${no}-1.svg`,
+      // 商品图：写图源的远程地址，由后端 /api/img 实时代理取回
+      // （本地不存图；ratio 写 1 是为了瀑布流提前占位，加载完不跳动）
+      images: conf.slug
+        ? [1, 2, 3].map(
+            (i) => `https://cdn.dummyjson.com/product-images/${conf.slug}/${i}.webp`
+          )
+        : [],
+      cover: conf.slug
+        ? `https://cdn.dummyjson.com/product-images/${conf.slug}/1.webp`
+        : '',
+      ratio: 1,
       // 规格：颜色不加价，版本/容量可能加价
       specs: [
         { name: '颜色', values: colorList.map((label) => ({ label, delta: 0 })) },

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T13:05:00.433Z",
+  "generatedAt": "2026-10-30T13:24:43.697Z",
   "categories": [
     {
       "id": "digital",
@@ -72,17 +72,17 @@
       "sales": 8421,
       "stock": 86,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "包邮",
         "热卖"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/2.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-airpods-max-silver/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -141,16 +141,16 @@
       "sales": 15230,
       "stock": 240,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/2.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-iphone-charger/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -209,7 +209,6 @@
       "sales": 3260,
       "stock": 42,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
@@ -219,6 +218,7 @@
         "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/tablets/ipad-mini-2021-starlight/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -261,7 +261,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "6.8 英寸 · 冷暖双色温前光。掌阅 X5 电子墨水屏采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "8.3 英寸 · 随身图书馆 · 全天续航。轻阅 X5 平板电脑采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#3b6ef5",
       "c2": "#7aa2ff"
     },
@@ -277,16 +277,16 @@
       "sales": 6742,
       "stock": 150,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/2.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-magsafe-battery-pack/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -345,7 +345,6 @@
       "sales": 2180,
       "stock": 63,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "热卖"
       ],
@@ -355,6 +354,7 @@
         "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/iphone-12-silicone-case-with-magsafe-plum/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -397,7 +397,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "低音红轴 · 三模连接。极简机械键盘 K3采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "液态硅胶 · 磁吸充电不摘壳。轻护 MagSafe 手机壳采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#3b6ef5",
       "c2": "#7aa2ff"
     },
@@ -413,17 +413,17 @@
       "sales": 942,
       "stock": 18,
       "rating": 4.4,
-      "ratio": 1,
       "tags": [
         "新品",
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
-        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp"
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/2.webp",
+        "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mobile-accessories/apple-homepod-mini-cosmic-grey/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -462,7 +462,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "自动对焦 · 内置电池。光影 4K 便携投影仪采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "360° 环绕声场 · 语音助手唤醒。拾音智能音箱 mini采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#3b6ef5",
       "c2": "#7aa2ff"
     },
@@ -478,7 +478,6 @@
       "sales": 12480,
       "stock": 320,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
@@ -489,6 +488,7 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -539,7 +539,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "380g 重磅棉 · 不起球。云朵感宽松圆领卫衣采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "260g 克重 · 不透不塌。云朵感重磅纯棉 T 恤采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e2568b",
       "c2": "#ff9ec0"
     },
@@ -555,7 +555,6 @@
       "sales": 8930,
       "stock": 180,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -565,6 +564,7 @@
         "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/womens-bags/heshe-women's-leather-bag/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -619,7 +619,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "高腰显瘦 · 四面弹面料。轻氧感直筒牛仔裤采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "头层牛皮 · 15.6 寸笔电直入。通勤真皮托特包采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e2568b",
       "c2": "#ff9ec0"
     },
@@ -635,7 +635,6 @@
       "sales": 3620,
       "stock": 95,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
@@ -645,6 +644,7 @@
         "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -699,7 +699,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "含绒量 90% · 零下十度可穿。暖阳 90 白鸭绒羽绒服采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "垂坠不贴身 · 秋冬新款。雾感收腰针织连衣裙采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e2568b",
       "c2": "#ff9ec0"
     },
@@ -715,7 +715,6 @@
       "sales": 5210,
       "stock": 210,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -725,6 +724,7 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -791,7 +791,6 @@
       "sales": 15820,
       "stock": 260,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖"
       ],
@@ -801,6 +800,7 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -879,7 +879,6 @@
       "sales": 7340,
       "stock": 400,
       "rating": 4.4,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -889,6 +888,7 @@
         "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -931,7 +931,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "亲肤不扎 · 冬日出街单品。细织羊毛混纺围巾采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "磨毛加厚 · 免烫抗皱。复古格纹法兰绒衬衫采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e2568b",
       "c2": "#ff9ec0"
     },
@@ -947,7 +947,6 @@
       "sales": 2140,
       "stock": 36,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -957,6 +956,7 @@
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1003,7 +1003,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "静音电机 · 记忆高度。北欧实木升降电脑桌采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "高回弹海绵 · 可拆洗外套。北欧布艺三人沙发采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#2f9e7e",
       "c2": "#7fd6b8"
     },
@@ -1019,7 +1019,6 @@
       "sales": 9840,
       "stock": 150,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
@@ -1030,6 +1029,7 @@
         "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1096,7 +1096,6 @@
       "sales": 4720,
       "stock": 88,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
@@ -1106,6 +1105,7 @@
         "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/home-decoration/house-showpiece-plant/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1148,7 +1148,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "直流变频 · 最低 18 分贝。静音循环扇 S2采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "仿真植物 · 免打理。北欧风绿植摆件采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#2f9e7e",
       "c2": "#7fd6b8"
     },
@@ -1164,7 +1164,6 @@
       "sales": 11230,
       "stock": 300,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -1174,6 +1173,7 @@
         "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/furniture/bedside-table-african-cherry/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1216,7 +1216,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "300ml · 无雾静音。拾光香薰加湿器采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "小户型友好 · 静音阻尼抽屉。原木床头柜采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#2f9e7e",
       "c2": "#7fd6b8"
     },
@@ -1232,7 +1232,6 @@
       "sales": 6210,
       "stock": 420,
       "rating": 4.3,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -1242,6 +1241,7 @@
         "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/furniture/knoll-saarinen-executive-conference-chair/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1284,7 +1284,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "可折叠 · 承重 120kg。收纳方格布艺凳采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "曲木靠背 · 承重 150kg。北欧实木餐椅采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#2f9e7e",
       "c2": "#7fd6b8"
     },
@@ -1300,16 +1300,16 @@
       "sales": 3380,
       "stock": 120,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
-        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
-        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp"
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/2.webp",
+        "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1352,7 +1352,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "三档色温 · 无极调光。暖光落地氛围灯采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "三档色温 · 触控调光。暖光桌面氛围灯采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#2f9e7e",
       "c2": "#7fd6b8"
     },
@@ -1368,17 +1368,17 @@
       "sales": 5610,
       "stock": 200,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/honey-jar/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/honey-jar/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1421,7 +1421,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "手工采摘 · 豆香浓郁。明前龙井 特级礼盒采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "波美度 42 · 500g 玻璃罐装。深山百花蜂蜜采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e08a2b",
       "c2": "#ffc178"
     },
@@ -1437,16 +1437,16 @@
       "sales": 18420,
       "stock": 800,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/nescafe-coffee/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1489,7 +1489,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "中深烘 · 10 片独立装。云南小粒咖啡挂耳采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "中深烘 · 零糖零脂。冻干黑咖啡采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e08a2b",
       "c2": "#ffc178"
     },
@@ -1505,16 +1505,16 @@
       "sales": 23150,
       "stock": 1000,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/juice/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/juice/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/juice/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1557,7 +1557,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "独立小袋 · 经期常备。古法手工红糖姜茶采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "100% 果汁 · 0 添加。NFC 鲜榨橙汁采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e08a2b",
       "c2": "#ffc178"
     },
@@ -1573,16 +1573,16 @@
       "sales": 8720,
       "stock": 350,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/protein-powder/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/protein-powder/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1621,7 +1621,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "六种坚果 · 低糖配方。海盐黑巧坚果礼盒采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "低脂高蛋白 · 独立量勺。分离乳清蛋白粉采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e08a2b",
       "c2": "#ffc178"
     },
@@ -1637,16 +1637,16 @@
       "sales": 6940,
       "stock": 160,
       "rating": 4.4,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/strawberry/2.webp",
+        "https://cdn.dummyjson.com/product-images/groceries/strawberry/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/strawberry/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1685,7 +1685,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "云南建水 · 甜度 18 度。当日现摘阳光玫瑰采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "云南空运 · 甜度 12+。当日现摘奶油草莓采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#e08a2b",
       "c2": "#ffc178"
     },
@@ -1701,7 +1701,6 @@
       "sales": 31200,
       "stock": 1200,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
@@ -1709,9 +1708,10 @@
       "images": [
         "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
         "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp",
-        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/2.webp"
+        "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/groceries/chicken-meat/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1770,7 +1770,6 @@
       "sales": 14280,
       "stock": 260,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖"
       ],
@@ -1780,6 +1779,7 @@
         "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/skin-care/olay-ultra-moisture-shea-butter-body-wash/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1822,7 +1822,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "5% 烟酰胺 · 敏感肌可用。水感保湿精华水采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "24h 长效润泽 · 敏感肌可用。水感保湿身体乳采用严选材质，经过 13 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#9a4bd8",
       "c2": "#d5a6f5"
     },
@@ -1838,7 +1838,6 @@
       "sales": 26540,
       "stock": 500,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮",
         "热卖"
@@ -1849,6 +1848,7 @@
         "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/skin-care/attitude-super-leaves-hand-soap/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1891,7 +1891,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "不泛白 · 成膜快。素颜防晒乳 SPF50+采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "弱酸性 · 洗后不紧绷。氨基酸温和洁面乳采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#9a4bd8",
       "c2": "#d5a6f5"
     },
@@ -1907,16 +1907,16 @@
       "sales": 9130,
       "stock": 180,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/2.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -1963,7 +1963,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "三支装 · 显白不挑皮。丝绒雾面口红礼盒采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "显白不挑皮 · 三色可选。丝绒雾面口红采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#9a4bd8",
       "c2": "#d5a6f5"
     },
@@ -1979,7 +1979,6 @@
       "sales": 18750,
       "stock": 640,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
@@ -1989,6 +1988,7 @@
         "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/skin-care/vaseline-men-body-and-face-lotion/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2031,7 +2031,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "弱酸性 · 洗后不紧绷。氨基酸温和洁面采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "不粘腻 · 控油保湿。男士清爽润肤乳采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#9a4bd8",
       "c2": "#d5a6f5"
     },
@@ -2047,16 +2047,16 @@
       "sales": 12460,
       "stock": 380,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/2.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2099,7 +2099,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "无硅油 · 蓬松控油。头皮护理洗发水采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "哑光珠光 · 附镜便携。大地色十二色眼影盘采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#9a4bd8",
       "c2": "#d5a6f5"
     },
@@ -2115,16 +2115,16 @@
       "sales": 5820,
       "stock": 140,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
-        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp"
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/2.webp",
+        "https://cdn.dummyjson.com/product-images/beauty/powder-canister/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2183,7 +2183,6 @@
       "sales": 7410,
       "stock": 210,
       "rating": 4.8,
-      "ratio": 1,
       "tags": [
         "热卖",
         "包邮"
@@ -2194,6 +2193,7 @@
         "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2272,16 +2272,16 @@
       "sales": 15230,
       "stock": 400,
       "rating": 4.7,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/2.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/basketball/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2328,7 +2328,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "防滑双面 · 送绑带。专业瑜伽垫 8mm采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "室内外通用 · 吸湿防滑。专业比赛篮球 7 号采用严选材质，经过 14 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#d94f3d",
       "c2": "#ff9877"
     },
@@ -2344,16 +2344,16 @@
       "sales": 9840,
       "stock": 520,
       "rating": 4.5,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/2.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/tennis-racket/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2396,7 +2396,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "自动计数 · 蓝牙同步。智能跳绳 T2采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "初学进阶两用 · 已穿线。碳纤维网球拍采用严选材质，经过 15 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#d94f3d",
       "c2": "#ff9877"
     },
@@ -2412,16 +2412,16 @@
       "sales": 21470,
       "stock": 780,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/2.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/american-football/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2476,7 +2476,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "冰丝面料 · 出汗不粘身。速干短袖训练服采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "9 号标准 · 耐磨胶皮。美式橄榄球训练用球采用严选材质，经过 16 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#d94f3d",
       "c2": "#ff9877"
     },
@@ -2492,16 +2492,16 @@
       "sales": 4260,
       "stock": 160,
       "rating": 4.4,
-      "ratio": 1,
       "tags": [
         "包邮"
       ],
       "images": [
         "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
-        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp"
+        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/2.webp",
+        "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/iron-golf/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2544,7 +2544,7 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "一对装 · 可拆卸配重。折叠健身哑铃采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "碳素杆身 · 容错率高。高尔夫七号铁杆采用严选材质，经过 17 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#d94f3d",
       "c2": "#ff9877"
     },
@@ -2560,7 +2560,6 @@
       "sales": 6180,
       "stock": 240,
       "rating": 4.6,
-      "ratio": 1,
       "tags": [
         "新品"
       ],
@@ -2570,6 +2569,7 @@
         "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/3.webp"
       ],
       "cover": "https://cdn.dummyjson.com/product-images/sports-accessories/baseball-glove/1.webp",
+      "ratio": 1,
       "specs": [
         {
           "name": "颜色",
@@ -2616,10 +2616,9 @@
           "v": "7 天无理由 · 运费险"
         }
       ],
-      "desc": "承重 150kg · 一秒收纳。户外露营折叠椅采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
+      "desc": "头层牛皮 · 即买即用。棒球内场手套采用严选材质，经过 12 道工序质检，支持 7 天无理由退换与运费险，下单后 48 小时内发货。",
       "c1": "#d94f3d",
       "c2": "#ff9877"
     }
-  ],
-  "imageSource": "DummyJSON 公开测试商品图，实时经后端 /api/img 代理拉取，本地不存图"
+  ]
 }
