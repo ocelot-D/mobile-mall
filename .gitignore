@@ -3,3 +3,4 @@ dist/
 .DS_Store
 *.log
 data/orders.json
+运行步骤.txt
