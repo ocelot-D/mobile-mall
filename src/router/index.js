@@ -16,7 +16,7 @@ const routes = [
     name: 'home',
     component: HomeView,
 
-    meta: { tab: true, title: 'MobiMall · 首页' },
+    meta: { tab: true, title: 'Mobile Mall · 首页' },
   },
   {
     path: '/category',
@@ -82,7 +82,7 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
-  document.title = to.meta.title || 'MobiMall'
+  document.title = to.meta.title || 'Mobile Mall'
 })
 
 export default router

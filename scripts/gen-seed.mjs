@@ -227,7 +227,7 @@ async function main() {
   await writeFile(path.join(DATA_DIR, 'products.json'), JSON.stringify(payload, null, 2), 'utf8')
 
   console.log('')
-  console.log('  [MobiMall] 种子数据生成完成')
+  console.log('  [Mobile Mall] 种子数据生成完成')
   console.log(`  分类      ${CATEGORIES.length} 个`)
   console.log(`  商品      ${products.length} 件`)
   console.log(`  图片      ${imgCount} 张（SVG，代码生成，无版权风险）`)
@@ -236,6 +236,6 @@ async function main() {
 }
 
 main().catch((err) => {
-  console.error('  [MobiMall] 生成失败：', err)
+  console.error('  [Mobile Mall] 生成失败：', err)
   process.exit(1)
 })

@@ -32,7 +32,7 @@ async function fetchImgWithRetry(href) {
       if (attempt > 0) await sleep(300)
       const upstream = await fetch(href, {
         signal: AbortSignal.timeout(12000),
-        headers: { 'User-Agent': 'MobiMall/1.0', Accept: 'image/*' },
+        headers: { 'User-Agent': 'mobile-mall/1.0', Accept: 'image/*' },
       })
       if (!upstream.ok) throw new Error('图源返回 ' + upstream.status)
       const buf = Buffer.from(await upstream.arrayBuffer())
@@ -128,7 +128,7 @@ async function refreshLiveCatalog() {
   try {
     const res = await fetch(`${LIVE_SOURCE}/products?limit=0&skip=0`, {
       signal: AbortSignal.timeout(15000),
-      headers: { 'User-Agent': 'MobiMall/1.0', Accept: 'application/json' },
+      headers: { 'User-Agent': 'mobile-mall/1.0', Accept: 'application/json' },
     })
     if (!res.ok) throw new Error(`图源返回 ${res.status}`)
     const data = await res.json()
@@ -145,19 +145,19 @@ async function refreshLiveCatalog() {
     liveState.lastFetch = Date.now()
     liveState.error = ''
     liveState.count = mapped.length
-    console.log(`[MobiMall] 实时商品源刷新成功：${mapped.length} 件`)
+    console.log(`[Mobile Mall] 实时商品源刷新成功：${mapped.length} 件`)
   } catch (err) {
 
     liveState.ok = false
     liveState.error = err.message
-    console.error('[MobiMall] 实时商品源刷新失败（保留现有数据）：', err.message)
+    console.error('[Mobile Mall] 实时商品源刷新失败（保留现有数据）：', err.message)
   }
 }
 
 let writeChain = Promise.resolve()
 function enqueueWrite(fn) {
   writeChain = writeChain.then(fn).catch((err) => {
-    console.error('[MobiMall] 写文件失败：', err.message)
+    console.error('[Mobile Mall] 写文件失败：', err.message)
   })
   return writeChain
 }
@@ -306,7 +306,7 @@ async function handleApi(req, res, url) {
   const q = url.searchParams
 
   if (pathname === '/api/health' && req.method === 'GET') {
-    return sendOk(res, { service: 'mobimall', products: catalog.products.length, orders: Object.keys(orders).length, time: Date.now(), live: liveState })
+    return sendOk(res, { service: 'mobile-mall', products: catalog.products.length, orders: Object.keys(orders).length, time: Date.now(), live: liveState })
   }
 
   if (pathname === '/api/img' && req.method === 'GET') {
@@ -445,7 +445,7 @@ async function handleApi(req, res, url) {
     orders[orderNo] = order
     enqueueWrite(() => writeFile(ORDERS_FILE, JSON.stringify(orders, null, 2), 'utf8'))
 
-    console.log(`[MobiMall] 新订单 ${orderNo} · ${detail.length} 件 · ¥${order.payAmount}`)
+    console.log(`[Mobile Mall] 新订单 ${orderNo} · ${detail.length} 件 · ¥${order.payAmount}`)
     return sendOk(res, order)
   }
 
@@ -461,7 +461,7 @@ async function handleApi(req, res, url) {
 
 const server = createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host || 'localhost'}`)
-  console.log(`[MobiMall] ${req.method} ${url.pathname}${url.search}`)
+  console.log(`[Mobile Mall] ${req.method} ${url.pathname}${url.search}`)
 
   res.setHeader('Access-Control-Allow-Origin', '*')
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS')
@@ -493,7 +493,7 @@ if (liveState.enabled) {
 server.listen(PORT, '0.0.0.0', () => {
   console.log('')
   console.log('========================================')
-  console.log('  MobiMall 后端已启动')
+  console.log('  Mobile Mall 后端已启动')
   console.log(`  本机访问    http://localhost:${PORT}`)
   console.log(`  健康检查    http://localhost:${PORT}/api/health`)
   console.log(`  商品接口    http://localhost:${PORT}/api/products?page=1&pageSize=8`)

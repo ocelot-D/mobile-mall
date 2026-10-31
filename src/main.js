@@ -24,7 +24,7 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
 
     navigator.serviceWorker.register('/sw.js').catch((err) => {
 
-      console.warn('[MobiMall] Service Worker 注册失败（不影响使用）:', err)
+      console.warn('[Mobile Mall] Service Worker 注册失败（不影响使用）:', err)
     })
   })
 }

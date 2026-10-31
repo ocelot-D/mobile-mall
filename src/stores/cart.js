@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { ref, computed, watch } from 'vue'
 
-const STORE_KEY = 'mobimall.cart'
+const STORE_KEY = 'mobile-mall.cart'
 
 function loadFromStorage() {
   try {

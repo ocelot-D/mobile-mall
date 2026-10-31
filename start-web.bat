@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================================
-REM  MobiMall - Start Frontend Dev Server (port 5174)
+REM  Mobile Mall - Start Frontend Dev Server (port 5174)
 REM  Double-click this file, then open http://localhost:5174/
 REM  ============================================================================
 REM
@@ -14,7 +14,7 @@ cd /d "%~dp0"
 
 echo.
 echo ============================================================================
-echo   MobiMall Frontend  (port 5174)
+echo   Mobile Mall Frontend  (port 5174)
 echo ============================================================================
 echo.
 

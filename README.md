@@ -1,4 +1,4 @@
-## MobiMall 移动端 H5 商城
+## Mobile Mall 移动端 H5 商城
 
 手机浏览器里能逛能买的一套完整商城流程，专注小屏适配、触摸手势与端到端下单闭环。
 
@@ -7,7 +7,7 @@
 本项目是一个完整的前后端分离项目，包含三个部分：
 
 ```
-MobiMall/
+mobile-mall/
 ├── src/          # 前端页面与组件（Vue 3 + Vite）
 ├── server/       # 后端 API（Node 原生 http，零第三方依赖）
 └── scripts/      # 数据生成与图片处理脚本

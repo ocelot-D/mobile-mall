@@ -99,7 +99,7 @@ const MENU = [
   { icon: '📍', label: '收货地址', extra: '' },
   { icon: '🎫', label: '领券中心', extra: '3 张可用' },
   { icon: '💬', label: '联系客服', extra: '' },
-  { icon: '⭐', label: '关于 MobiMall', extra: 'v1.0' },
+  { icon: '⭐', label: '关于 Mobile Mall', extra: 'v1.0' },
 ]
 
 function clearCart() {

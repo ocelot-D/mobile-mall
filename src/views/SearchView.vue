@@ -82,7 +82,7 @@ const bar = ref(null)
 
 const HOT = ['耳机', '咖啡', '羽绒服', '跑鞋', '精华水', '瑜伽垫', '坚果', '充电器']
 
-const HISTORY_KEY = 'mobimall.searchHistory'
+const HISTORY_KEY = 'mobile-mall.searchHistory'
 
 const keyword = ref('')
 const lastKeyword = ref('')

@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================================
-REM  MobiMall - Start Backend Server (port 3002)
+REM  Mobile Mall - Start Backend Server (port 3002)
 REM  Double-click this file, then open http://localhost:3002/api/health
 REM  ============================================================================
 REM
@@ -14,7 +14,7 @@ cd /d "%~dp0"
 
 echo.
 echo ============================================================
-echo   MobiMall Backend  (port 3002)
+echo   Mobile Mall Backend  (port 3002)
 echo ============================================================
 echo.
 

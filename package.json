@@ -1,7 +1,7 @@
 {
-  "name": "mobimall",
+  "name": "mobile-mall",
   "version": "1.0.0",
-  "description": "MobiMall - 移动端 H5 商城（Vue 3 + Vite 前端 + Node 零依赖后端）",
+  "description": "Mobile Mall - 移动端 H5 商城（Vue 3 + Vite 前端 + Node 零依赖后端）",
   "private": true,
   "type": "module",
   "scripts": {

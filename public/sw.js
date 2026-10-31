@@ -1,5 +1,5 @@
 const VERSION = 'v1'
-const STATIC_CACHE = `mobimall-static-${VERSION}`
+const STATIC_CACHE = `mobile-mall-static-${VERSION}`
 
 self.addEventListener('install', () => {
 
@@ -12,7 +12,7 @@ self.addEventListener('activate', (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.filter((k) => k.startsWith('mobimall-') && k !== STATIC_CACHE).map((k) => caches.delete(k))
+          keys.filter((k) => k.startsWith('mobile-mall-') && k !== STATIC_CACHE).map((k) => caches.delete(k))
         )
       )
       .then(() => self.clients.claim())

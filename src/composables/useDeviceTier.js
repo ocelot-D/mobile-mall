@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
-const STORE_KEY = 'mobimall.lowEndMode'
+const STORE_KEY = 'mobile-mall.lowEndMode'
 
 export const device = reactive({
   low: false,

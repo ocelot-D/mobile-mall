@@ -1,6 +1,6 @@
 @echo off
 REM ============================================================================
-REM  MobiMall - Build Frontend into dist/
+REM  Mobile Mall - Build Frontend into dist/
 REM  After this, `npm run serve` alone serves the whole site on port 3002.
 REM  ============================================================================
 REM
@@ -14,7 +14,7 @@ cd /d "%~dp0"
 
 echo.
 echo ============================================================================
-echo   MobiMall Build
+echo   Mobile Mall Build
 echo ============================================================================
 echo.
 
