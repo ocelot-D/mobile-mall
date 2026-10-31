@@ -51,7 +51,7 @@
       </template>
 
       <template v-else-if="pwa.canInstall.value">
-        <p class="pwa-tip">安装后从桌面图标打开，全屏显示、没有地址栏，和原生 App 一样。</p>
+        <p class="pwa-tip">安装后从桌面图标打开，全屏显示、无地址栏，即原生APP。</p>
         <button class="install-btn tap tap-44" @click="onInstall">安装到桌面</button>
       </template>
 
