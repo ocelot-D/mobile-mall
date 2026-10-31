@@ -2,8 +2,6 @@
 
 手机浏览器里能逛能买的一套完整商城流程，专注小屏适配、触摸手势与端到端下单闭环。
 
-在线体验（手机直接打开，不用连 WiFi）：`https://stream-chat-59652.app.workbuddy.host/?sharecode=LLFFCYHB56`
-
 ### 项目架构
 
 本项目是一个完整的前后端分离项目，包含三个部分：
@@ -168,5 +166,3 @@ npm run serve   # 后端同时托管 dist 与 /api，打开 http://localhost:300
 | `MOBI_LIVE=0` | 关闭实时商品层，只用本地 36 件兜底数据 |
 | `MOBI_DELAY=0` | 关闭接口人为延迟（默认 120ms，用于看清加载态） |
 | `PORT` | 后端端口，默认 3002 |
-
-详细图文步骤见 `运行步骤.txt`（纯文本，每条命令后带注释）。双击党可用 `start-backend.bat` / `start-web.bat` / `build.bat`。
