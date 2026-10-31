@@ -166,3 +166,7 @@ npm run serve   # 后端同时托管 dist 与 /api，打开 http://localhost:300
 | `MOBI_LIVE=0` | 关闭实时商品层，只用本地 36 件兜底数据 |
 | `MOBI_DELAY=0` | 关闭接口人为延迟（默认 120ms，用于看清加载态） |
 | `PORT` | 后端端口，默认 3002 |
+
+## 预览图
+
+![商城页面](./docs/preview.jpg)
